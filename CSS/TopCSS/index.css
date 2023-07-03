@@ -1,0 +1,328 @@
+@charset "UTF-8";
+* {
+  border: solid 1px rgb(255, 1, 1);
+  box-sizing: border-box;
+  font-family: MS Pゴシック;
+  font-family: Montserrat;
+}
+
+body {
+  position: relative;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+/*-----HEADER-----*/
+header {
+  z-index: 5;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  display: flex;
+  width: 100vw;
+  max-width: 390px;
+  height: 80px;
+}
+header .logo {
+  width: 200px;
+  height: 80px;
+  margin-left: 16px;
+  display: flex;
+  justify-content: center;
+}
+header .ham_menu {
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+}
+header .ham_menu .ham_btn {
+  z-index: 16;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 67px;
+  height: 80px;
+  padding: 28px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .ham_menu .ham_btn .line02 {
+  margin-top: 4px;
+}
+header .ham_menu .ham_btn .btn_line {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.line01::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 16px;
+  width: 35px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.line02::after {
+  content: "";
+  position: absolute;
+  bottom: 28px;
+  left: 16px;
+  width: 35px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/*-----menu body-----*/
+.menu_body {
+  position: absolute;
+  top: -16px;
+  background-color: #fff;
+  /*-----hide menu-----*/
+  right: -100%;
+  opacity: 0;
+  overflow: hidden;
+  /*--------------------*/
+  z-index: 10;
+  width: 100vw;
+  max-width: 390px;
+  height: 100vh;
+  padding-top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu_body .menu_logo {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 15%;
+}
+.menu_body .menu_link {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 390px;
+  padding: 0 8px;
+}
+.menu_body .menu_link li {
+  width: 100%;
+  height: 100%;
+  /*-----list style reset-----*/
+  padding-left: 0;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  /*--------------------*/
+}
+.menu_body .menu_link li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  max-height: 80px;
+  border-bottom: 3px solid #73B7BB;
+  color: #343434;
+  font-weight: bold;
+  font-size: 16px;
+}
+.menu_body .menu_btn {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.menu_body .menu_btn a {
+  margin-top: 48px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 50px;
+}
+.menu_body .menu_btn .menu_btn01 {
+  background-color: #73B7BB;
+  color: #fff;
+}
+.menu_body .menu_btn .menu_btn02 {
+  background-color: #fff;
+  color: #343434;
+  border: 3px solid #73B7BB;
+}
+
+/*-----Key Visual-----*/
+.KV {
+  height: 844px;
+  width: auto;
+  margin-bottom: 24px;
+  position: relative;
+}
+.KV .down_arrow {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.KV .key_v {
+  position: relative;
+  height: 100%;
+  width: auto;
+  background-image: url(../../img/KV02.jpg);
+  background-repeat: no-repeat;
+  height: 844px;
+  width: auto;
+  background-position: center;
+}
+.KV .key_v .title01 {
+  position: absolute;
+  background-color: #fff;
+  bottom: 200px;
+  right: 16px;
+  padding: 2px;
+  margin-bottom: 100px;
+  font-size: 30px;
+}
+.KV .key_v .title02 {
+  position: absolute;
+  background-color: #fff;
+  bottom: 200px;
+  right: 16px;
+  padding: 2px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.KV .key_v .title03 {
+  position: absolute;
+  background-color: #fff;
+  bottom: 200px;
+  right: 16px;
+  padding: 2px;
+  font-size: 18px;
+}
+
+/*-----section text-----*/
+.intro {
+  margin: 0 auto;
+}
+
+.Web_title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 64px 0 16px 0;
+}
+
+.block {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  height: 10px;
+  background-color: #1361A5;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  margin: 24px 0 24px 0;
+}
+
+.content_link {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #343434;
+  background-color: #fff;
+  border: 3px solid #73B7BB;
+}
+
+.intro_test {
+  position: relative;
+  margin: 72px 16px 56px 16px;
+  border-radius: 32px;
+  padding: 16px;
+  border: 3px solid #1361A5;
+}
+.intro_test h2 {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+}
+.intro_test p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.intro_test .test_link {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #73B7BB;
+  border: 3px solid #73B7BB;
+}
+
+.intro_test::before {
+  content: "";
+  background-image: url(../../img/tag_アートボード\ 1.svg);
+  position: absolute;
+  top: -30px;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+}
+
+/*-----footer-----*/
+footer {
+  width: 100%;
+  max-width: 390px;
+  height: 340px;
+}
+footer .footer_link {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */

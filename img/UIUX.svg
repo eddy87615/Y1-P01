@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 841.89 526.72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f8f8;
+      }
+
+      .cls-2 {
+        font-size: 18px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #231815;
+        font-family: Meiryo, Meiryo;
+      }
+
+      .cls-4 {
+        font-family: SourceSansRoman-Regular, 'Source Sans Variable';
+        font-size: 120px;
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #c30d23;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-7 {
+        fill: none;
+        stroke: #c30d23;
+      }
+
+      .cls-7, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        font-size: 50px;
+        stroke: #231815;
+      }
+
+      .cls-8 {
+        fill: #c9e8f6;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-1" cx="420.94" cy="263.36" r="123.17"/>
+    </clipPath>
+  </defs>
+  <rect class="cls-8" y="-34.28" width="841.89" height="595.28"/>
+  <text class="cls-4" transform="translate(75.68 119.75)"><tspan x="0" y="0">UI</tspan></text>
+  <text class="cls-3" transform="translate(80.16 193.69)"><tspan x="0" y="0">接點</tspan></text>
+  <text class="cls-2" transform="translate(49.16 243.79)"><tspan x="0" y="0">サイト内のデザイン</tspan><tspan x="-9" y="31.5">ボタンやフォーム等の</tspan><tspan x="54" y="63">パーツ</tspan></text>
+  <text class="cls-3" transform="translate(652.69 337.39)"><tspan x="0" y="0">体験</tspan></text>
+  <text class="cls-2" transform="translate(630.69 387.52)"><tspan x="0" y="0">スムーズな操作感</tspan><tspan x="36" y="31.5">見やすい</tspan><tspan x="-45" y="63">ページの表示スピードが早く</tspan><tspan x="9" y="94.5">ストレスがない</tspan></text>
+  <text class="cls-4" transform="translate(633.21 263.36)"><tspan x="0" y="0">UX</tspan></text>
+  <g>
+    <circle class="cls-1" cx="420.94" cy="263.36" r="123.17"/>
+    <g class="cls-6">
+      <image width="512" height="512" transform="translate(273.48 171.36) scale(.47)" xlink:href="../../../../Downloads/using-phone.png"/>
+    </g>
+  </g>
+  <polyline class="cls-7" points="181.26 79.92 338.12 79.92 411.64 186.98"/>
+  <polyline class="cls-7" points="623.49 263.36 558.71 328.14 335.99 328.14"/>
+  <circle class="cls-5" cx="181.26" cy="79.92" r="3.24"/>
+  <circle class="cls-5" cx="411.64" cy="186.98" r="3.24"/>
+  <circle class="cls-5" cx="335.99" cy="328.14" r="3.24"/>
+  <circle class="cls-5" cx="623.49" cy="263.36" r="3.24"/>
+</svg>
