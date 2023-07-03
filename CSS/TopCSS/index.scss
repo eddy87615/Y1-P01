@@ -3,7 +3,7 @@
 *{
     // border: solid 1px rgb(255, 1, 1);
 
-    box-sizing: border-box;
+    // box-sizing: border-box;
 
     font-family: MS Pゴシック;
     font-family: Montserrat;
@@ -12,12 +12,13 @@
 $base_color: #1361A5;
 $main_color: #73B7BB;
 $text_color: #343434;
-$bg_color: #fff;
+$bg_color: #ffffff;
 
 body{
     position: relative;
 
     max-width: 390px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -69,7 +70,9 @@ header{
 
             display: flex;
             flex-direction: column;
-            justify-content: center;            
+            justify-content: center;       
+            
+            cursor: pointer;
 
             .line02{
                 margin-top: 4px;
@@ -276,6 +279,14 @@ header{
 }
 
 /*-----section text-----*/
+main{
+    background-color: $bg_color;
+}
+
+section{
+    background-color: $bg_color;
+    height: 100%;
+}
 .intro{
     margin: 0 auto;
 }
@@ -284,8 +295,9 @@ header{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    padding: 64px 0 16px 0;
 
-    margin: 64px 0 16px 0;
+    // margin: 64px 0 16px 0;
 }
 
 .block{
@@ -326,10 +338,14 @@ p{
     border: 3px solid $main_color;
 }
 
-.intro_test{
+.test_all{
+    background-color: $bg_color;
+    padding: 72px 16px 56px 16px;
+}
+.test_intro_content{
     position: relative;
 
-    margin: 72px 16px 56px 16px;
+    // margin: 72px 16px 56px 16px;
     border-radius: 32px;
     padding: 16px;
 
@@ -366,7 +382,7 @@ p{
         border: 3px solid $main_color;
     }
 }
-.intro_test::before{
+.test_intro_content::before{
     content: '';
     background-image: url(../../img/tag_アートボード\ 1.svg);
     position: absolute;
@@ -382,16 +398,65 @@ footer{
     width: 100%;
     max-width: 390px;
     height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    border-top: 3px solid $base_color;
+    background-color: $bg_color;
 
     .footer_link{
+        font-size: 14px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-        display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
+        margin-left: 48px;
 
-        width: 100%;
-        height: 50%;
-        list-style: none;
-
+        a{
+            text-decoration: none;
+            color: $text_color;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
     }
+
+    .jec_logo_footer{
+        margin: 40px auto;
+        display: flex;
+        justify-content: center;
+
+        width: 200px;
+
+        img{
+            width: 200px;    
+        }
+    }
+
+    .copyright{
+        font-size: 10px;
+        color: $bg_color;
+
+        margin: 0;
+
+        background-color: $base_color;
+
+        height: 80px;
+    }
+
+}
+
+/*-----hover-----*/
+
+section a:hover{
+    background-color: $main_color;
+    border: 3px solid #fff;
+    color: #fff;
+}
+.test_link:hover{
+    background-color: #fff;
+    border: 3px solid $main_color;
+    color: $text_color;
 }

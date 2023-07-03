@@ -1,6 +1,5 @@
 @charset "UTF-8";
 * {
-  box-sizing: border-box;
   font-family: MS Pゴシック;
   font-family: Montserrat;
 }
@@ -8,6 +7,7 @@
 body {
   position: relative;
   max-width: 390px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -48,6 +48,7 @@ header .ham_menu .ham_btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
 }
 header .ham_menu .ham_btn .line02 {
   margin-top: 4px;
@@ -224,6 +225,15 @@ header .ham_menu .ham_btn .btn_line {
 }
 
 /*-----section text-----*/
+main {
+  background-color: #ffffff;
+}
+
+section {
+  background-color: #ffffff;
+  height: 100%;
+}
+
 .intro {
   margin: 0 auto;
 }
@@ -232,7 +242,7 @@ header .ham_menu .ham_btn .btn_line {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin: 64px 0 16px 0;
+  padding: 64px 0 16px 0;
 }
 
 .block {
@@ -267,24 +277,28 @@ p {
   border: 3px solid #73B7BB;
 }
 
-.intro_test {
+.test_all {
+  background-color: #ffffff;
+  padding: 72px 16px 56px 16px;
+}
+
+.test_intro_content {
   position: relative;
-  margin: 72px 16px 56px 16px;
   border-radius: 32px;
   padding: 16px;
   border: 3px solid #1361A5;
 }
-.intro_test h2 {
+.test_intro_content h2 {
   margin-top: 32px;
   font-size: 16px;
   line-height: 32px;
   text-align: center;
 }
-.intro_test p {
+.test_intro_content p {
   font-size: 14px;
   line-height: 24px;
 }
-.intro_test .test_link {
+.test_intro_content .test_link {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -300,7 +314,7 @@ p {
   border: 3px solid #73B7BB;
 }
 
-.intro_test::before {
+.test_intro_content::before {
   content: "";
   background-image: url(../../img/tag_アートボード\ 1.svg);
   position: absolute;
@@ -315,12 +329,53 @@ footer {
   width: 100%;
   max-width: 390px;
   height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-top: 3px solid #1361A5;
+  background-color: #ffffff;
 }
 footer .footer_link {
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 48px;
+}
+footer .footer_link a {
+  text-decoration: none;
+  color: #343434;
+}
+footer .footer_link p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+footer .jec_logo_footer {
+  margin: 40px auto;
   display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 50%;
-  list-style: none;
+  justify-content: center;
+  width: 200px;
+}
+footer .jec_logo_footer img {
+  width: 200px;
+}
+footer .copyright {
+  font-size: 10px;
+  color: #ffffff;
+  margin: 0;
+  background-color: #1361A5;
+  height: 80px;
+}
+
+/*-----hover-----*/
+section a:hover {
+  background-color: #73B7BB;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.test_link:hover {
+  background-color: #fff;
+  border: 3px solid #73B7BB;
+  color: #343434;
 }/*# sourceMappingURL=index.css.map */
