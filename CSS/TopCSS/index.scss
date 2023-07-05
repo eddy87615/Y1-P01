@@ -24,7 +24,16 @@ body{
 
 /*-----HEADER-----*/
 
+.header_change_color{
+    background-color: $base_color;
+    border-bottom: 5px solid $main_color;
+
+    transition-duration: 0.5s;
+}
+
 header{
+    transition-duration: 0.5s;
+
     z-index: 5;
 
     position: fixed;
@@ -54,7 +63,6 @@ header{
         max-width: 100%;
         // height: 100vh;
         top: 0;
-        right: 16px;
 
         .ham_btn{
             z-index: 16;
@@ -74,21 +82,18 @@ header{
             
             cursor: pointer;
 
-            .line02{
-                margin-top: 4px;
-            }
             .btn_line{
                 display: block;
     
                 width: 35px;
                 height: 3px;
-                background-color: #fff;
+                background-color: rgba(255, 255, 255, 1);
                 border-radius: 2px;
             }
         }
     }
 }
-.line01::before{
+.btn_line::before{
     content: '';
     position: absolute;
     top: 28px;
@@ -96,9 +101,9 @@ header{
     width: 35px;
     height: 3px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
 }
-.line02::after{
+.btn_line::after{
     content: '';
     position: absolute;
     bottom: 28px;
@@ -106,7 +111,7 @@ header{
     width: 35px;
     height: 3px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 /*-----menu body-----*/
@@ -463,19 +468,22 @@ section a:hover{
 
 /*-----clicked style-----*/
 
-.btn_line_clicked::before, .btn_line_clicked::after{
-    display: none;
-}
-
-.line01_clicked{
+.btn_line_clicked::before{
     transform: rotate(45deg);
     position: absolute;
     top: 50%;
 
     transition-duration: 0.3s;
 }
-.line02_clicked{
+.btn_line_clicked::after{
     transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+
+    transition-duration: 0.3s;
+}
+.btn_line_clicked{
+    background-color: rgba(255, 255, 255, 0) !important;
 
     transition-duration: 0.3s;
 }

@@ -12,7 +12,14 @@ body {
 }
 
 /*-----HEADER-----*/
+.header_change_color {
+  background-color: #1361A5;
+  border-bottom: 5px solid #73B7BB;
+  transition-duration: 0.5s;
+}
+
 header {
+  transition-duration: 0.5s;
   z-index: 5;
   position: fixed;
   left: 50%;
@@ -35,7 +42,6 @@ header .ham_menu {
   width: 100vw;
   max-width: 100%;
   top: 0;
-  right: 16px;
 }
 header .ham_menu .ham_btn {
   z-index: 16;
@@ -50,18 +56,15 @@ header .ham_menu .ham_btn {
   justify-content: center;
   cursor: pointer;
 }
-header .ham_menu .ham_btn .line02 {
-  margin-top: 4px;
-}
 header .ham_menu .ham_btn .btn_line {
   display: block;
   width: 35px;
   height: 3px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 2px;
 }
 
-.line01::before {
+.btn_line::before {
   content: "";
   position: absolute;
   top: 28px;
@@ -69,10 +72,10 @@ header .ham_menu .ham_btn .btn_line {
   width: 35px;
   height: 3px;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
-.line02::after {
+.btn_line::after {
   content: "";
   position: absolute;
   bottom: 28px;
@@ -80,7 +83,7 @@ header .ham_menu .ham_btn .btn_line {
   width: 35px;
   height: 3px;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 /*-----menu body-----*/
@@ -381,18 +384,21 @@ section a:hover {
 }
 
 /*-----clicked style-----*/
-.btn_line_clicked::before, .btn_line_clicked::after {
-  display: none;
-}
-
-.line01_clicked {
+.btn_line_clicked::before {
   transform: rotate(45deg);
   position: absolute;
   top: 50%;
   transition-duration: 0.3s;
 }
 
-.line02_clicked {
+.btn_line_clicked::after {
   transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  transition-duration: 0.3s;
+}
+
+.btn_line_clicked {
+  background-color: rgba(255, 255, 255, 0) !important;
   transition-duration: 0.3s;
 }/*# sourceMappingURL=index.css.map */
