@@ -35,7 +35,7 @@ header .ham_menu {
   width: 100vw;
   max-width: 100%;
   top: 0;
-  right: 0;
+  right: 16px;
 }
 header .ham_menu .ham_btn {
   z-index: 16;
@@ -378,4 +378,21 @@ section a:hover {
   background-color: #fff;
   border: 3px solid #73B7BB;
   color: #343434;
+}
+
+/*-----clicked style-----*/
+.btn_line_clicked::before, .btn_line_clicked::after {
+  display: none;
+}
+
+.line01_clicked {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  transition-duration: 0.3s;
+}
+
+.line02_clicked {
+  transform: rotate(-45deg);
+  transition-duration: 0.3s;
 }/*# sourceMappingURL=index.css.map */
