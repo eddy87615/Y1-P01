@@ -62,6 +62,7 @@ header .ham_menu .ham_btn .btn_line {
   height: 3px;
   background-color: rgb(255, 255, 255);
   border-radius: 2px;
+  transition-duration: 0.3s;
 }
 
 .btn_line::before {
@@ -73,6 +74,7 @@ header .ham_menu .ham_btn .btn_line {
   height: 3px;
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
+  transition-duration: 0.3s;
 }
 
 .btn_line::after {
@@ -84,10 +86,12 @@ header .ham_menu .ham_btn .btn_line {
   height: 3px;
   border-radius: 4px;
   background-color: rgb(255, 255, 255);
+  transition-duration: 0.3s;
 }
 
 /*-----menu body-----*/
 .menu_body {
+  transition-duration: 0.5s;
   position: absolute;
   top: -16px;
   background-color: #fff;
@@ -166,10 +170,13 @@ header .ham_menu .ham_btn .btn_line {
   border-radius: 50px;
 }
 .menu_body .menu_btn .menu_btn01 {
+  transition-duration: 0.3s;
   background-color: #73B7BB;
+  border: 3px solid #fff;
   color: #fff;
 }
 .menu_body .menu_btn .menu_btn02 {
+  transition-duration: 0.3s;
   background-color: #fff;
   color: #343434;
   border: 3px solid #73B7BB;
@@ -183,6 +190,7 @@ header .ham_menu .ham_btn .btn_line {
   position: relative;
 }
 .KV .down_arrow {
+  animation-timing-function: ease-out;
   width: 56px;
   height: 56px;
   position: absolute;
@@ -208,6 +216,7 @@ header .ham_menu .ham_btn .btn_line {
   padding: 2px;
   margin-bottom: 100px;
   font-size: 30px;
+  animation: text 1s infinite;
 }
 .KV .key_v .title02 {
   position: absolute;
@@ -217,6 +226,7 @@ header .ham_menu .ham_btn .btn_line {
   padding: 2px;
   margin-bottom: 40px;
   font-size: 30px;
+  animation: text 1.3s infinite;
 }
 .KV .key_v .title03 {
   position: absolute;
@@ -225,6 +235,7 @@ header .ham_menu .ham_btn .btn_line {
   right: 16px;
   padding: 2px;
   font-size: 18px;
+  animation: text 1.6s infinite;
 }
 
 /*-----section text-----*/
@@ -239,6 +250,29 @@ section {
 
 .intro {
   margin: 0 auto;
+}
+
+.Web_learning {
+  position: relative;
+  z-index: 0;
+}
+
+.one {
+  position: absolute;
+  top: 140px;
+  left: -30px;
+  opacity: 0.5;
+  z-index: -1;
+  width: 200px;
+}
+
+.two {
+  position: absolute;
+  top: 320px;
+  right: -30px;
+  opacity: 0.5;
+  z-index: -1;
+  width: 200px;
 }
 
 .Web_title {
@@ -278,6 +312,7 @@ p {
   color: #343434;
   background-color: #fff;
   border: 3px solid #73B7BB;
+  transition-duration: 0.3s;
 }
 
 .test_all {
@@ -373,14 +408,40 @@ footer .copyright {
 /*-----hover-----*/
 section a:hover {
   background-color: #73B7BB;
-  border: 3px solid #fff;
+  border: 3px solid #73B7BB;
   color: #fff;
+  transition-duration: 0.3s;
 }
 
 .test_link:hover {
   background-color: #fff;
   border: 3px solid #73B7BB;
   color: #343434;
+  transition-duration: 0.3s;
+}
+
+.menu_link li a:hover {
+  background-color: #73B7BB;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+.menu_btn li .menu_btn01:hover {
+  background-color: #fff;
+  border: 3px solid #73B7BB;
+  color: #343434;
+  transition-duration: 0.3s;
+}
+
+.menu_btn li .menu_btn02:hover {
+  background-color: #73B7BB;
+  border: 3px solid #73B7BB;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+.footer_link a:hover {
+  color: #1361A5;
 }
 
 /*-----clicked style-----*/
@@ -388,6 +449,7 @@ section a:hover {
   transform: rotate(45deg);
   position: absolute;
   top: 50%;
+  background-color: #1361A5;
   transition-duration: 0.3s;
 }
 
@@ -395,10 +457,55 @@ section a:hover {
   transform: rotate(-45deg);
   position: absolute;
   top: 50%;
+  background-color: #1361A5;
   transition-duration: 0.3s;
 }
 
 .btn_line_clicked {
   background-color: rgba(255, 255, 255, 0) !important;
   transition-duration: 0.3s;
+}
+
+.menu_body_clicked {
+  transition-duration: 0.5s;
+  right: 0;
+  opacity: 1;
+  overflow: hidden;
+}
+
+/*-----animatiom-----*/
+.down_arrow {
+  animation: arrow 1.3s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 70px;
+  }
+  50% {
+    bottom: 80px;
+  }
+  60% {
+    bottom: 70px;
+  }
+  70% {
+    bottom: 60px;
+  }
+  80% {
+    bottom: 50px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+@keyframes text {
+  0% {
+    right: 16px;
+  }
+  50% {
+    right: 24px;
+  }
+  100% {
+    right: 16px;
+  }
 }/*# sourceMappingURL=index.css.map */
