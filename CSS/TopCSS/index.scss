@@ -6,7 +6,7 @@
     // box-sizing: border-box;
 
     font-family: MS Pゴシック;
-    font-family: Montserrat;
+    // font-family: Montserrat;
 }
 
 $base_color: #1361A5;
@@ -15,9 +15,7 @@ $text_color: #343434;
 $bg_color: #ffffff;
 
 body{
-    position: relative;
-
-    max-width: 390px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
 }
@@ -45,8 +43,8 @@ header{
     // transform: translate(-50%, 0);
 
     display: flex;
-    width: 100vw;
-    max-width: 390px;
+    width: 100%;
+    // max-width: 390px;
     height: 80px;
 
     .logo{
@@ -234,6 +232,10 @@ header{
 }
 
 /*-----Key Visual-----*/
+
+main{
+    width: 100%;
+}
 
 .KV{
     height: 844px;
@@ -449,7 +451,7 @@ p{
 
 footer{
     width: 100%;
-    max-width: 390px;
+    // max-width: 390px;
     height: 340px;
     display: flex;
     flex-direction: column;
