@@ -337,7 +337,7 @@ section{
 .two{
     position: absolute;
     top: 320px;
-    right: -30px;
+    right: 0;
     opacity: 0.5;
     z-index: -1;
 
@@ -461,11 +461,19 @@ footer{
     background-color: $bg_color;
 
     .footer_link{
+        margin: 0 auto;
         font-size: 14px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
 
-        margin-left: 48px;
+        .footer_link_a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
 
         a{
             text-decoration: none;

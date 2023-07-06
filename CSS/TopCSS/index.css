@@ -270,7 +270,7 @@ section {
 .two {
   position: absolute;
   top: 320px;
-  right: -30px;
+  right: 0;
   opacity: 0.5;
   z-index: -1;
   width: 200px;
@@ -374,10 +374,18 @@ footer {
   background-color: #ffffff;
 }
 footer .footer_link {
+  margin: 0 auto;
   font-size: 14px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 48px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+footer .footer_link .footer_link_a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 footer .footer_link a {
   text-decoration: none;
