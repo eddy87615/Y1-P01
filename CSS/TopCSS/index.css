@@ -1,6 +1,8 @@
 @charset "UTF-8";
 * {
-  font-family: Montserrat, ヒラギノ角ゴシック;
+  font-family: a-otf-jun-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 
 body {
