@@ -3,7 +3,7 @@
 *{
     // border: solid 1px rgb(255, 1, 1);
 
-    // box-sizing: border-box;
+    box-sizing: border-box;
 
     font-family: a-otf-jun-pro, sans-serif;
     font-style: normal;
@@ -48,7 +48,7 @@ header{
     // max-width: 390px;
     height: 80px;
 
-    border-bottom: 5px solid $base_color;
+    border-bottom: 5px solid $main_color;
     background-color: $bg_color;
 
     .logo{
@@ -233,8 +233,325 @@ header{
     }
 }
 
+/*-----content-----*/
+
 main{
+    position: relative;
+
     width: 100%;
     background-color: $bg_color;
     margin-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 48px 0 32px 0;
+    }
+
+    .block{
+        margin: 0 auto;
+
+        display: flex;
+        width: 90%;
+        height: 10px;
+        background-color: $base_color;
+        border-radius: 20px;
+    }
+
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: normal;
+
+        text-align: center;
+
+        padding: 32px 0;
+    }
+
+    .webdesign_intro{
+    
+        p{
+        padding: 0 16px 16px 16px;
+        }  
+        
+        font-size: 14px;
+        line-height: 32px;
+
+        img{
+            border: 5px solid $bg_color;
+
+            z-index: 1;
+        }
+
+        .img{
+            position: relative;    
+            width: 300px;
+
+            margin: 0 auto;
+
+            display: flex;
+            justify-content: center;
+        }
+        .img01{
+            padding-top: 40px;
+            right: -16px;
+        }
+        .img01::before{
+            content: '';
+            width: 300px;
+            height: 180px;
+            background-color: $base_color;
+            position: absolute;
+            top: 10px;
+            left: -32px;
+
+            z-index: 0;
+        }
+        .img03{
+            padding-bottom: 40px;
+            left: -16px;
+        }
+        .img03::before{
+            content: '';
+            width: 300px;
+            height: 180px;
+            background-color: $base_color;
+            position: absolute;
+            bottom: 10px;
+            right: -32px;
+
+            z-index: 0;
+        }
+    }
+}
+
+.class_intro{
+
+    position: relative;
+
+    padding-bottom: 80px;
+
+    p{
+        font-size: 16px;
+
+        text-align: center;
+
+        padding: 56px 0;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        list-style: none;
+
+        gap: 56px;
+
+        z-index: 1;
+
+        li{
+            display: flex;
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 290px;
+                height: 60px;
+
+                text-decoration: none;
+
+                color: $text_color;
+                background-color: $bg_color;
+
+                border: 3px solid $main_color;
+                border-radius: 30px;
+
+                z-index: 1;
+
+                transition-duration: 0.3s;
+            }
+        }
+    }
+
+    img{
+        position: absolute;
+        z-index: 0;
+
+        width: 230px;
+        height: auto;
+
+        bottom: 0;
+        right: 0;
+
+        z-index: 0;
+
+        opacity: 0.5;
+    }
+}
+
+.test_lead{
+    padding: 56px 16px 56px 16px;
+    background-color: $base_color;
+    color: $bg_color;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    a{
+        margin: 48px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 290px;
+        height: 60px;
+
+        text-decoration: none;
+
+        color: $text_color;
+        background-color: $bg_color;
+
+        border: 3px solid $main_color;
+        border-radius: 30px;
+
+        transition-duration: 0.3s;
+    }
+
+    img{
+        width: 80px;
+
+        margin: 0 auto;
+
+        cursor: pointer;
+    }
+}
+
+/*-----footer-----*/
+
+footer{
+    width: 100%;
+    // max-width: 390px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    border-top: 3px solid $base_color;
+    background-color: $bg_color;
+
+    .footer_link{
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+        .footer_link_a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        a{
+            text-decoration: none;
+            color: $text_color;
+
+            padding: 4px;
+        }
+        p{
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+    }
+
+    .jec_logo_footer{
+        margin: 40px auto;
+        display: flex;
+        justify-content: center;
+
+        width: 200px;
+
+        img{
+            width: 200px;    
+        }
+    }
+
+    .copyright{
+        font-size: 12px;
+        color: $bg_color;
+        text-align: center;
+
+        margin: 0;
+
+        background-color: $base_color;
+
+        height: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/*-----hover-----*/
+
+main a:hover, main ul>li>a:hover{
+    background-color: $main_color;
+    color: $bg_color;
+
+    transition-duration: 0.3s;
+}
+
+.footer_link a:hover{
+    color: $base_color;
+}
+
+/*-----clicked style-----*/
+
+.btn_line_clicked::before{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    background-color: $base_color;
+
+    transition-duration: 0.3s;
+}
+.btn_line_clicked::after{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50%;
+    background-color: $base_color;
+
+    transition-duration: 0.3s;
+}
+.btn_line_clicked{
+    background-color: rgba(255, 255, 255, 0) !important;
+
+    transition-duration: 0.3s;
+}
+
+.menu_body_clicked{
+    transition-duration: 0.5s;
+
+    right: 0;
+    opacity: 1;
+    overflow: hidden;
 }
