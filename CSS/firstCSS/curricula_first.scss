@@ -273,6 +273,8 @@ section{
     .design > ul,
     .basic > ul{
         margin: 0 auto;
+        margin-bottom: 16px;
+        
         width: 90%;
 
         list-style: none;
@@ -282,12 +284,10 @@ section{
         border-radius: 20px;
 
         height: 160px;
-
-        margin: 16px;
         /*-----overflow ... -----*/
         display: -webkit-box;
         overflow: hidden;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 3;
         word-break: break-all;
         text-overflow: ellipsis;
         -webkit-box-orient: vertical;
