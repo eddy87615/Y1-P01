@@ -2,15 +2,15 @@
 
 //-----folder-----//
 
-$(document).ready(function() {
-    $('.content > ul > li > h2').click(function(event) {
-        event.preventDefault();
-      //把this以外的都隱藏起來，找自己的父層，再往下找子層的ul選單，將打開的ul選單全部slideUp()收闔起來
-        $(this).parent().siblings().find('ul').slideUp();
-      //將自己的ul，判斷做摺疊效果
-        $(this).parent().find('ul').slideToggle();
-    });
-});
+// $(document).ready(function() {
+//     $('.content > ul > li > h2').click(function(event) {
+//         event.preventDefault();
+//       //把this以外的都隱藏起來，找自己的父層，再往下找子層的ul選單，將打開的ul選單全部slideUp()收闔起來
+//         $(this).parent().siblings().find('ul').slideUp();
+//       //將自己的ul，判斷做摺疊效果
+//         $(this).parent().find('ul').slideToggle();
+//     });
+// });
 
 //-----menu-----//
 

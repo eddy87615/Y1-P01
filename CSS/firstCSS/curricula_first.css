@@ -222,16 +222,40 @@ section .basic > ul {
   -webkit-line-clamp: 4;
   word-break: break-all;
   text-overflow: ellipsis;
+  /* autoprefixer: off */
   -webkit-box-orient: vertical;
+  /* autoprefixer: off */
   /*-----overflow ... -----*/
 }
 section h3 {
+  color: #343434;
+  position: relative;
   font-size: 18px;
-  padding: 16px 8px;
+  padding: 16px 32px;
+}
+section h3::before {
+  content: "";
+  position: absolute;
+  background-color: #343434;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+section h3::after {
+  content: ">";
+  position: absolute;
+  color: #343434;
+  top: 50%;
+  transform: translateY(-55%);
+  right: 16px;
 }
 section .coding > ul > li > p,
 section .design > ul > li > p,
 section .basic > ul > li > p {
+  color: #343434;
   padding: 0 8px 16px 8px;
   font-size: 14px;
   line-height: 32px;
@@ -265,10 +289,6 @@ h2::after {
   top: 50%;
   transform: translateY(-60%);
   right: 20%;
-}
-
-.content > ul > li > ul {
-  display: none;
 }
 
 /*-----footer-----*/

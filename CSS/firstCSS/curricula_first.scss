@@ -290,18 +290,56 @@ section{
         -webkit-line-clamp: 4;
         word-break: break-all;
         text-overflow: ellipsis;
+        /* autoprefixer: off */
         -webkit-box-orient: vertical;
+        /* autoprefixer: off */
+
         /*-----overflow ... -----*/
     }
     h3{
+        color: $text_color;
+
+        position: relative;
+
         font-size: 18px;
 
-        padding: 16px 8px;
+        padding: 16px 32px;
+    }
+
+    h3::before{
+        content: '';
+
+        position: absolute;
+
+        background-color: $text_color;
+
+        border-radius: 50%;
+
+        width: 8px;
+        height: 8px;
+
+        top: 50%;
+        transform: translateY(-50%);
+        left: 16px;
+    }
+    h3::after{
+        content: '>';
+
+        position: absolute;
+        
+        color: $text_color;
+
+        top: 50%;
+        transform: translateY(-55%);
+        right: 16px;
+
     }
 
     .coding > ul > li > p,
     .design > ul > li > p,
     .basic > ul > li > p{
+
+        color: $text_color;
 
         padding: 0 8px 16px 8px;
 
@@ -344,10 +382,6 @@ h2::after{
     top: 50%;
     transform: translateY(-60%);
     right: 20%;
-}
-
-.content > ul > li > ul{
-    display: none;
 }
 
 /*-----footer-----*/
