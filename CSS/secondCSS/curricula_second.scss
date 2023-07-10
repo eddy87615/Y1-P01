@@ -5,7 +5,7 @@
 *{
     // border: solid 1px rgb(255, 1, 1);
 
-    // box-sizing: border-box;
+    box-sizing: border-box;
 
     font-family: 'Noto Sans JP', sans-serif;
     font-style: normal;
@@ -50,6 +50,9 @@ header{
     // max-width: 390px;
     height: 80px;
 
+    border-bottom: 5px solid $main_color;
+    background-color: $bg_color;
+
     .logo{
         width: 200px;
         height: 80px;
@@ -88,7 +91,7 @@ header{
     
                 width: 35px;
                 height: 3px;
-                background-color: rgba(255, 255, 255, 1);
+                background-color: $base_color;
                 border-radius: 2px;
 
                 transition-duration: 0.3s;
@@ -104,7 +107,7 @@ header{
     width: 35px;
     height: 3px;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: $base_color;
 
     transition-duration: 0.3s;
 
@@ -117,7 +120,7 @@ header{
     width: 35px;
     height: 3px;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: $base_color;
 
     transition-duration: 0.3s;
 
@@ -232,217 +235,123 @@ header{
     }
 }
 
-/*-----Key Visual-----*/
+/*-----section-----*/
 
-.KV{
-    height: 844px;
-    width: auto;
-    
-    margin-bottom: 24px;
+.title{
     position: relative;
 
-    .down_arrow{
-        animation-timing-function: ease-out;
+    margin-top: 80px;
+    padding: 32px 16px 32px 40px;
 
-        width: 56px;
-        height: 56px;
-        position: absolute;
-        bottom: 50px;
-        left: 50%;
-        transform: translate(-50%);
-
-    }
-
-    .key_v{
-        position: relative;
-        height: 100%;
-        width: auto;
-
-        background-image: url(../../img/KV02.jpg);
-        background-repeat: no-repeat;
-        height: 844px;
-        width: auto;
-        background-position: center;
-
-        .title01{
-            position: absolute;
-            background-color: #fff;
-            bottom: 200px;
-            right: 16px;
-            padding: 2px;
-
-            margin-bottom: 100px;
-
-            font-size: 30px;
-
-            animation: text 1s infinite;
-        }
-        .title02{
-            position: absolute;
-            background-color: #fff;
-            bottom: 200px;
-            right: 16px;
-            padding: 2px;
-
-            margin-bottom: 40px;
-
-            font-size: 30px;
-
-            animation: text 1.3s infinite;
-        }
-        .title03{
-            position: absolute;
-            background-color: #fff;
-            bottom: 200px;
-            right: 16px;
-            padding: 2px;
-
-            font-size: 18px;
-
-            animation: text 1.6s infinite;
-        }
-    }
-}
-
-/*-----section text-----*/
-main{
-    width: 100%;
-    background-color: $bg_color;
-}
-
-section{
-    background-color: $bg_color;
-    height: 100%;
-}
-.intro{
-    margin: 0 auto;
-}
-
-.Web_learning{
-    position: relative;
-    z-index: 0;
-}
-
-.one{
-    position: absolute;
-    top: 140px;
-    left: -30px;
-    opacity: 0.5;
-    z-index: -1;
-
-    width: 200px;
-}
-.two{
-    position: absolute;
-    top: 320px;
-    right: 0;
-    opacity: 0.5;
-    z-index: -1;
-
-    width: 200px;
-}
-
-.Web_title{
     font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    padding: 64px 0 16px 0;
 
-    // margin: 64px 0 16px 0;
-}
+    background-image: url(../../img/slash-02.svg);
+    background-repeat: no-repeat;
+    background-size: 150% 250%;
+    background-position: 20% 20%;
 
-.block{
-    margin: 0 auto;
-
-    display: flex;
-    width: 90%;
-    height: 10px;
-    background-color: $base_color;
-    border-radius: 20px;
-}
-
-p{
-    font-size: 16px;
-    line-height: 32px;
-    text-align: center;
-
-    margin: 24px 0 24px 0;
-}
-.content_link{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 290px;
-    height: 60px;
-
-    border-radius: 30px;
-
-    text-decoration: none;
-
-    font-size: 14px;
-    font-weight: bold;
     color: $text_color;
+}
+.title::before{
+    content: '';
 
-    background-color: #fff;
-    border: 3px solid $main_color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
 
-    transition-duration: 0.3s;
+    background-color: $base_color;
+    width: 12px;
+    height: 50px;
 }
 
-.test_all{
-    background-color: $bg_color;
-    padding: 72px 16px 56px 16px;
-}
-.test_intro_content{
-    position: relative;
-
-    // margin: 72px 16px 56px 16px;
-    border-radius: 32px;
-    padding: 16px;
-
-    border: 3px solid $base_color;
+.content{
+    ul{
+        list-style: none;
+    }
 
     h2{
-        margin-top: 32px;
-        font-size: 16px;
-        line-height: 32px;
         text-align: center;
+
+        padding: 16px ;
+        background-color: $base_color;
+        color: $bg_color;
+        font-size: 24px;
     }
+
+    h3{
+        position: relative;
+
+        font-size: 16px;
+
+        padding: 16px 0 16px 40px;
+
+        border-bottom: 3px solid $main_color;
+
+        color: $text_color;
+
+        margin: 16px;
+    }
+
     p{
+
+        color: $text_color;
+
         font-size: 14px;
+
         line-height: 24px;
     }
-    .test_link{
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: 290px;
-        height: 60px;
-
-        border-radius: 30px;
-
-        text-decoration: none;
-
-        font-size: 14px;
-        font-weight: bold;
-        color: #fff;
-
-        background-color: $main_color;
-        border: 3px solid $main_color;
-    }
 }
-.test_intro_content::before{
+
+// .content  > ul > li > ul{
+//     height: 0;
+
+//     overflow: hidden;
+// } 
+
+.coding ul,
+.design ul,
+.basic ul{
+    display: none;
+
+    border-bottom: 3px solid $main_color;
+    margin: 0 16px;
+}
+
+.content > ul li > p, .content > ul li > img{
+    padding: 16px;
+}
+.content > ul li > img{
+    margin: 0 auto;
+}
+
+h3::before{
     content: '';
-    background-image: url(../../img/tag_アートボード\ 1.svg);
     position: absolute;
-    top: -30px;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    background-color: $text_color;
+
+    top: 50%;
+    transform: translateY(-55%);
+    left: 16px;
+}
+h3::after{
+    content: '';
+    position: absolute;
+
+    width: 20px;
+    height: 16px;
+
+    background-image: url(../../img/opencontent.svg);
     background-repeat: no-repeat;
-    height: 70px;
-    width: 70px;
+
+    top: 50%;
+    transform: translateY(-55%);
+    right: 16px;
 }
 
 /*-----footer-----*/
@@ -457,6 +366,8 @@ footer{
 
     border-top: 3px solid $base_color;
     background-color: $bg_color;
+
+    margin-top: 32px;
 
     .footer_link{
         margin: 0 auto;
@@ -475,6 +386,8 @@ footer{
         a{
             text-decoration: none;
             color: $text_color;
+
+            padding: 4px;
         }
         p{
             font-size: 14px;
@@ -500,6 +413,7 @@ footer{
     .copyright{
         font-size: 12px;
         color: $bg_color;
+        text-align: center;
 
         margin: 0;
 
@@ -512,52 +426,6 @@ footer{
         align-items: center;
     }
 
-}
-
-/*-----hover-----*/
-
-section a:hover{
-    background-color: $main_color;
-    border: 3px solid $main_color;
-    color: #fff;
-
-    transition-duration: 0.3s;
-}
-.test_link:hover{
-    background-color: #fff;
-    border: 3px solid $main_color;
-    color: $text_color;
-
-    transition-duration: 0.3s;
-}
-
-.menu_link li a:hover{
-    background-color: $main_color;
-    // border: 3px solid $bg_color;
-    color: #fff;
-
-    transition-duration: 0.3s;
-}
-
-.menu_btn li .menu_btn01:hover{
-    background-color: #fff;
-    border: 3px solid $main_color;
-    color: #343434;
-
-    transition-duration: 0.3s;
-
-}
-.menu_btn li .menu_btn02:hover{
-    background-color: $main_color;
-    border: 3px solid $main_color;
-    color: #fff;
-
-    transition-duration: 0.3s;
-
-}
-
-.footer_link a:hover{
-    color: $base_color;
 }
 
 /*-----clicked style-----*/
@@ -592,41 +460,14 @@ section a:hover{
     overflow: hidden;
 }
 
-/*-----animatiom-----*/
+/*-----hover-----*/
 
-.down_arrow{
-    animation: arrow 1.3s infinite;
-}
+// h3:hover{
+//     border-bottom: 3px solid $base_color;
+// }
 
-@keyframes arrow{
-    0%{
-        bottom: 70px;
-    }
-    50%{
-        bottom: 80px;
-    }
-    60%{
-        bottom: 70px;
-    }
-    70%{
-        bottom: 60px;
-    }
-    80%{
-        bottom: 50px;
-    }
-    100%{
-        bottom: 70px;
-    }
-}
-
-@keyframes text{
-    0%{
-        right: 16px;
-    }
-    50%{
-        right: 24px;
-    }
-    100%{
-        right: 16px;
-    }
-}
+// .coding ul:hover,
+// .design ul:hover,
+// .basic ul:hover{
+//     border-bottom: 3px solid $base_color;
+// }

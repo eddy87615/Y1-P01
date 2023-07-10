@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
 * {
   box-sizing: border-box;
-  font-family: a-otf-jun-pro, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-style: normal;
 }
 
@@ -180,115 +181,92 @@ header .ham_menu .ham_btn .btn_line {
   border: 3px solid #73B7BB;
 }
 
-/*-----title-----*/
-section {
-  width: 100%;
-  padding-top: 80px;
-}
-section h1 {
+/*-----section-----*/
+.title {
   position: relative;
+  margin-top: 80px;
+  padding: 32px 16px 32px 40px;
   font-size: 30px;
-  padding: 32px 0 32px 40px;
   background-image: url(../../img/slash-01.svg);
   background-repeat: no-repeat;
-  background-position: right -80px bottom -100px;
-  background-size: 80% 300%;
-}
-section h2 {
-  position: relative;
-  background-color: #1361A5;
-  padding: 16px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 24px;
-  margin: 32px 0;
-}
-section .coding > h2 {
-  margin-top: 0;
-}
-section .coding > ul,
-section .design > ul,
-section .basic > ul {
-  margin: 0 auto;
-  margin-bottom: 16px;
-  width: 90%;
-  list-style: none;
-  background-color: rgba(115, 183, 187, 0.3);
-  border-radius: 20px;
-  height: 160px;
-  /*-----overflow ... -----*/
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-line-clamp: 4;
-  word-break: break-all;
-  text-overflow: ellipsis;
-  /* autoprefixer: off */
-  -webkit-box-orient: vertical;
-  /* autoprefixer: off */
-  /*-----overflow ... -----*/
-}
-section h3 {
+  background-size: 150% 300%;
+  background-position: 20% 20%;
   color: #343434;
-  position: relative;
-  font-size: 18px;
-  padding: 16px 32px;
 }
-section h3::before {
+
+.title::before {
   content: "";
   position: absolute;
-  background-color: #343434;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
   top: 50%;
   transform: translateY(-50%);
+  left: 24px;
+  background-color: #1361A5;
+  width: 12px;
+  height: 50px;
+}
+
+.content ul {
+  list-style: none;
+}
+.content h2 {
+  text-align: center;
+  padding: 16px;
+  background-color: #1361A5;
+  color: #ffffff;
+  font-size: 24px;
+}
+.content h3 {
+  position: relative;
+  font-size: 16px;
+  padding: 16px 0 16px 40px;
+  border-bottom: 3px solid #73B7BB;
+  color: #343434;
+  margin: 16px;
+}
+.content p {
+  color: #343434;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.coding ul,
+.design ul,
+.basic ul {
+  display: none;
+  border-bottom: 3px solid #73B7BB;
+  margin: 0 16px;
+}
+
+.content > ul li > p, .content > ul li > img {
+  padding: 16px;
+}
+
+.content > ul li > img {
+  margin: 0 auto;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #343434;
+  top: 50%;
+  transform: translateY(-55%);
   left: 16px;
 }
-section h3::after {
-  content: ">";
+
+h3::after {
+  content: "";
   position: absolute;
-  color: #343434;
+  width: 20px;
+  height: 16px;
+  background-image: url(../../img/opencontent.svg);
+  background-repeat: no-repeat;
   top: 50%;
   transform: translateY(-55%);
   right: 16px;
-}
-section .coding > ul > li > p,
-section .design > ul > li > p,
-section .basic > ul > li > p {
-  color: #343434;
-  padding: 0 8px 16px 8px;
-  font-size: 14px;
-  line-height: 32px;
-}
-
-h1::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 50px;
-  background-color: #1361A5;
-  top: 32px;
-  left: 20px;
-}
-
-h2::before {
-  content: url(../../img/open.svg);
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 50%;
-  transform: translateY(-60%);
-  left: 20%;
-}
-
-h2::after {
-  content: url(../../img/open.svg);
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 50%;
-  transform: translateY(-60%);
-  right: 20%;
 }
 
 /*-----footer-----*/
@@ -300,6 +278,7 @@ footer {
   justify-content: end;
   border-top: 3px solid #1361A5;
   background-color: #ffffff;
+  margin-top: 32px;
 }
 footer .footer_link {
   margin: 0 auto;
@@ -321,6 +300,7 @@ footer .footer_link a {
 }
 footer .footer_link p {
   font-size: 14px;
+  font-weight: 600;
   margin: 0;
   padding: 0;
   text-align: left;
@@ -373,4 +353,6 @@ footer .copyright {
   right: 0;
   opacity: 1;
   overflow: hidden;
-}/*# sourceMappingURL=curricula_first.css.map */
+}
+
+/*-----hover-----*//*# sourceMappingURL=curricula_first.css.map */
