@@ -29,9 +29,11 @@ body{
 
     padding: 16px;
 
+    margin: 0 auto;
+
     background-color: $base_color;
 
-    // overflow: hidden;
+    overflow: hidden;
 
     .frame{
         background-color: $bg_color;
@@ -46,7 +48,8 @@ body{
             width: 100%;
             height: 100%;
             display: flex;
-            white-space: nowrap
+
+            // overflow: hidden;
         }
         .first_page{
             width: 100%;
@@ -55,25 +58,207 @@ body{
             border: 3px solid $main_color;
             border-radius: 20px;
 
+            padding: 40px 16px;
 
+            display: flex;
+            flex-direction: column;
+
+            background-image: url(../../img/coding01.svg);
+            background-repeat: no-repeat;
+            background-size: 300px 300px;
+            background-position: 50% 500px;
+
+            .content_start{
+                text-align: center;
+
+                .start_word{
+                    margin-bottom: 56px;
+
+                    color: $text_color;
+                }
+            }
+
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 24px auto;
+
+                width: 200px;
+                height: 60px;
+
+                background-color: $bg_color;
+                border: 3px solid $main_color;
+                border-radius: 30px;
+
+                color: $text_color;
+
+                cursor: pointer;
+                font-weight: bold;
+
+                transition-duration: 0.3s;
+            }
         }
-        .test{
-            width: 100%;
-            height: 100%;
+    }
+}
 
-            border: 3px solid $main_color;
-            border-radius: 20px;
+.test{
+    width: 100%;
+    height: 100%;
 
-            display: none;
+    border: 3px solid $main_color;
+    border-radius: 20px;
 
-        }
+    padding: 40px 16px;
+    position: relative;
+    top: -100%;
+    right: -100vw;
+
+    background-color: $bg_color;
+
+    .quiz_title{
+        color: $text_color;
+
+        font-size: 24px;
+        line-height: 32px;
+
+        text-align: center;
+
+        position: relative;
 
     }
+
+    .quiz_content{
+        font-size: 14px;
+        line-height: 24px;
+
+        padding: 24px;
+
+        color: #797979;
+
+        margin: 24px 0 8px 0;
+
+        text-align: center;
+
+    }
+
+    button{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 16px auto;
+
+        width: 200px;
+        height: 60px;
+
+        background-color: $bg_color;
+        border: 3px solid $main_color;
+        border-radius: 30px;
+
+        color: $text_color;
+
+        cursor: pointer;
+        font-weight: bold;
+
+        transition-duration: 0.3s;
+    }
+
+    .normal{
+        background-color: $main_color;
+        border: 3px solid $main_color;
+        color: $bg_color;
+    }
+
+    .test_content{
+        height: 500px;
+
+        .button{
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.test_show{
+    width: 100%;
+    height: 100%;
+
+    border: 3px solid $main_color;
+    border-radius: 20px;
+
+    padding: 40px 16px;
+    position: relative;
+    top: -100%;
+    right: 0;
+
+    background-color: $bg_color;
+
+    transition-duration: 0.8s;
 }
 
 h1{
     font-size: 30px;
-    line-height: 40px;
+    line-height: 56px;
 
     text-align: center;
+
+    color: $text_color;
+}
+
+.block{
+    width: 90%;
+    height: 10px;
+
+    background-color: $base_color;
+    border-radius: 20px;
+
+    margin: 56px auto;
+}
+
+// .quiz_title::after{
+//     content: '';
+//     position: absolute;
+//     top: 100%;
+//     left: 50%;
+//     transform: translateX(-50%);
+
+//     width: 80px;
+//     height: 4px;
+
+//     border-radius: 20px;
+
+//     background-color: $base_color;
+
+//     margin-top: 20px;
+// }
+
+.bgc_pic{
+    z-index: 0;
+    position: absolute;
+    width: 300px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+/*-----hover-----*/
+
+button:hover{
+
+    background-color: $main_color !important;
+    color: $bg_color !important;
+
+    transition-duration: 0.3s;
+}
+
+.normal:hover{
+    background-color: $bg_color !important;
+    border: 3px solid $main_color !important;
+    color: $text_color !important;
 }
