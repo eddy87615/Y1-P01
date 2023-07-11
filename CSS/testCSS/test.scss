@@ -33,7 +33,7 @@ body{
 
     background-color: $base_color;
 
-    overflow: hidden;
+    // overflow: hidden;
 
     .frame{
         background-color: $bg_color;
@@ -111,8 +111,8 @@ body{
 
     padding: 40px 16px;
     position: relative;
-    top: -100%;
-    right: -100vw;
+    // top: -100%;
+    // right: -100vw;
 
     background-color: $bg_color;
 
@@ -169,6 +169,36 @@ body{
     }
 }
 
+.score_page{
+    width: 100%;
+    height: 100%;
+
+    border: 3px solid $main_color;
+    border-radius: 20px;
+
+    padding: 40px 16px;
+    position: relative;
+    // top: -100%;
+    // right: -100vw;
+}
+
+.score_show{
+    width: 100%;
+    height: 100%;
+
+    border: 3px solid $main_color;
+    border-radius: 20px;
+
+    padding: 40px 8px;
+    position: relative;
+    top: -100%;
+    right: 0;
+
+    background-color: $bg_color;
+
+    transition-duration: 0.8s;
+}
+
 .quiz_content{
     position: relative;
 
@@ -220,6 +250,38 @@ body{
     background-color: $bg_color;
 
     transition-duration: 0.8s;
+}
+
+.rank_btn{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    button{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 16px auto;
+
+        width: 290px;
+        height: 60px;
+
+        background-color: $bg_color;
+        border: 3px solid $main_color;
+        border-radius: 30px;
+
+        color: $text_color;
+
+        cursor: pointer;
+        font-weight: bold;
+
+        transition-duration: 0.3s;
+
+    }
+    
 }
 
 h1{

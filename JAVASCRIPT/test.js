@@ -172,7 +172,8 @@ const bgc_img = document.createElement("img");
 
 let counter = 1;
 
-let score = 0;
+let score = -3;
+
 
 function changeQuiz() {
     quiz_title.innerHTML = quizArr[counter - 1].title;
@@ -206,25 +207,39 @@ btns.forEach((btn) => {
     btn.addEventListener("click", () => {
         counter++
         if(counter > quizArr.length) {
-            if(btn.className.includes("yes")) {
-                score++
-            } else if(btn.className.includes("no")) {
-                score--
-            }
-            quiz_title.innerHTML = "your score is" + score
-            quiz_content.innerHTML = ""
+            if(btn.className.includes("yes")){
+                score+=5;
+            }else if(btn.className.includes("no")){
+                score+=1;
+            }else{score+=3};
+
+            // quiz_title.innerHTML = "点数：" + score
+            // quiz_content.innerHTML = ""
         } else {
-            if(btn.className.includes("yes")) {
-                score++
-            } else if(btn.className.includes("no")) {
-                score--
-            }
+            if(btn.className.includes("yes")){
+                score+=5;
+            }else if(btn.className.includes("no")){
+                score+=1;
+            }else{score+=3};
             changeQuiz()
+
+            console.log(counter);
+            console.log(score);
         }
     })
 });
 
 
-if(btn.className.includes("yes")){
-    score++
-}else(btn)
+// if(btn.className.includes("yes")) {
+//     score++
+// } else if(btn.className.includes("no")) {
+//     score--
+// }
+
+// if(100 > score >= 80){
+// A
+// }else if(80 > score >= 70){
+//     B
+// }else if(70 > score >= 60){
+//     C
+// }else{D};
