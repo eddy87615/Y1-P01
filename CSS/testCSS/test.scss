@@ -49,7 +49,7 @@ body{
             height: 100%;
             display: flex;
 
-            // overflow: hidden;
+            overflow: hidden;
         }
         .first_page{
             width: 100%;
@@ -111,8 +111,8 @@ body{
 
     padding: 40px 16px;
     position: relative;
-    // top: -100%;
-    // right: -100vw;
+    top: -100%;
+    right: -100vw;
 
     background-color: $bg_color;
 
