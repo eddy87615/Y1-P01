@@ -33,7 +33,7 @@ body{
 
     background-color: $base_color;
 
-    // overflow: hidden;
+    overflow: hidden;
 
     .frame{
         background-color: $bg_color;
@@ -178,8 +178,8 @@ body{
 
     padding: 40px 16px;
     position: relative;
-    // top: -100%;
-    // right: -100vw;
+    top: -100%;
+    right: -100vw;
 }
 
 .score_show{

@@ -17,6 +17,7 @@ body {
   padding: 16px;
   margin: 0 auto;
   background-color: #1361A5;
+  overflow: hidden;
 }
 .test_body .frame {
   background-color: #ffffff;
@@ -121,6 +122,8 @@ body {
   border-radius: 20px;
   padding: 40px 16px;
   position: relative;
+  top: -100%;
+  right: -100vw;
 }
 
 .score_show {
