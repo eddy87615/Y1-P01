@@ -17,7 +17,6 @@ body {
   padding: 16px;
   margin: 0 auto;
   background-color: #1361A5;
-  overflow: hidden;
 }
 .test_body .frame {
   background-color: #ffffff;
@@ -75,8 +74,6 @@ body {
   border-radius: 20px;
   padding: 40px 16px;
   position: relative;
-  top: -100%;
-  right: -100vw;
   background-color: #ffffff;
 }
 .test .quiz_title {
@@ -125,8 +122,39 @@ body {
   border-radius: 20px;
   padding: 40px 16px;
   position: relative;
-  top: -100%;
-  right: -100vw;
+}
+.score_page .jec, .score_page .get_doc {
+  background-color: #73B7BB;
+  border: 3px solid #73B7BB;
+  color: #ffffff;
+}
+.score_page .rank {
+  position: relative;
+  margin: 0 auto;
+  width: 30%;
+  height: 20%;
+}
+.score_page .commend {
+  color: #343434;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+}
+
+b {
+  font-size: 24px;
+}
+
+.jec_hide {
+  display: none !important;
+}
+
+.get_doc_hide {
+  display: none !important;
+}
+
+.hotpage_hide {
+  display: none !important;
 }
 
 .score_show {
@@ -136,7 +164,7 @@ body {
   border-radius: 20px;
   padding: 40px 8px;
   position: relative;
-  top: -100%;
+  top: -200%;
   right: 0;
   background-color: #ffffff;
   transition-duration: 0.8s;
@@ -239,6 +267,18 @@ button:hover {
 }
 
 .normal:hover {
+  background-color: #ffffff !important;
+  border: 3px solid #73B7BB !important;
+  color: #343434 !important;
+}
+
+.jec:hover {
+  background-color: #ffffff !important;
+  border: 3px solid #73B7BB !important;
+  color: #343434 !important;
+}
+
+.get_doc:hover {
   background-color: #ffffff !important;
   border: 3px solid #73B7BB !important;
   color: #343434 !important;

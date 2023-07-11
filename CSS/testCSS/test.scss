@@ -33,7 +33,7 @@ body{
 
     background-color: $base_color;
 
-    overflow: hidden;
+    // overflow: hidden;
 
     .frame{
         background-color: $bg_color;
@@ -111,8 +111,8 @@ body{
 
     padding: 40px 16px;
     position: relative;
-    top: -100%;
-    right: -100vw;
+    // top: -100%;
+    // right: -100vw;
 
     background-color: $bg_color;
 
@@ -178,8 +178,47 @@ body{
 
     padding: 40px 16px;
     position: relative;
-    top: -100%;
-    right: -100vw;
+    // top: -100%;
+    // right: -100vw;
+
+    .jec, .get_doc{
+
+        background-color: $main_color;
+        border: 3px solid $main_color;
+        color: $bg_color;
+    }
+
+    .rank{
+        position: relative;
+
+        margin: 0 auto;
+
+        width: 30%;
+        height: 20%;
+    }
+
+    .commend{
+        color: $text_color;
+
+        font-size: 16px;
+        line-height: 35px;
+
+        text-align: center;
+    }
+}
+
+b{
+    font-size: 24px;
+}
+
+.jec_hide{
+    display: none !important;
+}
+.get_doc_hide{
+    display: none !important;
+}
+.hotpage_hide{
+    display: none !important;
 }
 
 .score_show{
@@ -191,7 +230,7 @@ body{
 
     padding: 40px 8px;
     position: relative;
-    top: -100%;
+    top: -200%;
     right: 0;
 
     background-color: $bg_color;
@@ -342,6 +381,17 @@ button:hover{
 }
 
 .normal:hover{
+    background-color: $bg_color !important;
+    border: 3px solid $main_color !important;
+    color: $text_color !important;
+}
+
+.jec:hover{
+    background-color: $bg_color !important;
+    border: 3px solid $main_color !important;
+    color: $text_color !important;
+}
+.get_doc:hover{
     background-color: $bg_color !important;
     border: 3px solid $main_color !important;
     color: $text_color !important;
