@@ -24,7 +24,7 @@ const quizArr = [
     {
         id: 1,
         title: "１．私はストレスを解消する方法がある。",
-        content: `例えば：スポーツしたり、寝たりすることでリラックスする。<br>研究による、ストレスコントロール力が高ければ、問題に直面しても乗り越えることができて、前向きに仕事に取り組むことができる。`,
+        content: `研究による、ストレスコントロール力が高ければ、問題に直面しても乗り越えることができて、前向きに仕事に取り組むことができる。`,
         img: ``,
         bubble:``
     },
@@ -37,126 +37,126 @@ const quizArr = [
     },
     {
         id: 3,
-        title: "３．私は努力が報われると信じている。",
+        title: "<br><br>３．私は努力が報われると信じている。",
         content: ``,
         img: `img/努力_アートボード 1.svg`,
         bubble:``
     },
     {
         id: 4,
-        title: "４．私はスケジュール管理ができる。",
+        title: "<br>４．私はスケジュール管理ができる。",
         content: `課題が多いから、自分のスケジュールをちゃんと管理しないとやばいだよ！`,
         img: ``,
         bubble:``
     },
     {
         id: 5,
-        title: "５．私は臨機応変に物事を対応できる。",
+        title: "<br><br>５．私は臨機応変に物事を対応できる。",
         content: ``,
-        img: ``,
+        img: `img/臨機応変.svg`,
         bubble:``
     },
     {
         id: 6,
-        title: "６．私は自習することができる。",
-        content: `自主的に勉強するのが大事だよ！`,
+        title: "<br>６．私は自習することができる。",
+        content: `自主的に勉強するのが大事だよ！ `,
         img: ``,
         bubble:``
     },
     {
         id: 7,
-        title: "７．私は知らないことに興味がある。",
+        title: "<br>７．私は知らないことに興味がある。",
         content: `IT技術の更新が早くていつも新しい知識を得られる。`,
         img: ``,
         bubble:``
     },
     {
         id: 8,
-        title: "８．私は複雑な問題を解決したら達成感を感じる。",
+        title: "<br>８．私は複雑な問題を解決したら達成感を感じる。",
         content: `コーディングがさすが難しいよね...`,
         img: ``,
         bubble:``
     },
     {
         id: 9,
-        title: "９．私は自分で調べて問題を解決することができる。",
+        title: "<br>９．私は自分で調べて問題を解決することができる。",
         content: `知らないことは他人に聞く以外自分で調べるのも大事だよ！`,
         img: ``,
         bubble:``
     },
     {
         id: 10,
-        title: "１０．私は知らないことを知らないままをするのが嫌だ。",
+        title: "<br>１０．私は知らないことを知らないままをするのが嫌だ。",
         content: `知らないまま眠れないよね？`,
         img: ``,
         bubble:``
     },
     {
         id: 11,
-        title: "１１．私は一人作業よりチームで作業するのが好き。",
+        title: "<br>１１．私は一人作業よりチームで作業するのが好き。",
         content: `Webデザイン科はチームワークを重視している学科だよ！`,
         img: ``,
         bubble:``
     },
     {
         id: 12,
-        title: "１２．私はクラスメイトと課題を話し合うことができる。",
+        title: "<br><br>１２．私はクラスメイトと課題を話し合うことができる。",
         content: ``,
-        img: ``,
+        img: `img/meeting01.svg`,
         bubble:``
     },
     {
         id: 13,
-        title: "１３．私は質問があれば先輩/先生に聞く。",
+        title: "<br>１３．私は質問があれば先輩/先生に聞く。",
         content: `先生も先輩もみんなの力になれる！`,
         img: ``,
         bubble:``
     },
     {
         id: 14,
-        title: "１４．私は黙りっぱなしより自分から話す方が好き。",
+        title: "<br><br>１４．私は黙りっぱなしより自分から話す方が好き。",
         content: ``,
-        img: ``,
+        img: `img/對話框_アートボード 1.svg`,
         bubble:``
     },
     {
         id: 15,
-        title: "１５．私は自分の役割をちゃんとできて、他人の迷惑をかけない。",
+        title: "<br><br>１５．私は自分の役割をちゃんとできて、他人の迷惑をかけない。",
         content: ``,
         img: ``,
         bubble:``
     },
     {
         id: 16,
-        title: "１６．私は産学連携に興味がある。",
+        title: "<br>１６．私は産学連携に興味がある。",
         content: `専門学校にはやっぱり就職だろう？これからどんな事があるのを先に知った方がいいと思うね`,
         img: ``,
         bubble:``
     },
     {
         id: 17,
-        title: "１７．私はパソコンで働くことを楽しみしている。",
+        title: "<br>１７．私はパソコンで働くことを楽しみしている。",
         content: `エンジニアもデザイナーも！パソコンがあれば仕事ができる！！`,
         img: ``,
         bubble:``
     },
     {
         id: 18,
-        title: "１８．私はプロジェクトを参加して経験を貯めることに興味がある。",
+        title: "<br>１８．私はプロジェクトを参加して経験を貯めることに興味がある。",
         content: `エンジニアもデザイナーも！パソコンがあれば仕事ができる！！`,
         img: ``,
         bubble:``
     },
     {
         id: 18,
-        title: "１９．仕事で新しい知識を学ぶのが楽しい。",
+        title: "<br>１９．仕事で新しい知識を学ぶのが楽しい。",
         content: `ITの知識毎日更新しているので、いつも新しい技術を学ぶ心構えが必要！`,
         img: ``,
         bubble:``
     },
     {
         id: 20,
-        title: "２０．簡単な手段で複雑な問題を解決することができる。",
+        title: "<br><br>２０．簡単な手段で複雑な問題を解決することができる。",
         content: ``,
         img: ``,
         bubble:``
@@ -176,10 +176,28 @@ let score = 0;
 
 function changeQuiz() {
     quiz_title.innerHTML = quizArr[counter - 1].title;
+
     quiz_content.innerHTML = quizArr[counter - 1].content;
+
+
+//-----内容有無判断-----//
+
+    if(quiz_content.textContent === ''){
+
+        quiz_content.classList.add("quiz_content_hide")
+    }else{
+        quiz_content.classList.remove("quiz_content_hide")
+
+    };
+
+//--------------------//
+
+//-----画像インプット-----//
 
     bgc_img.src = quizArr[counter - 1].img;
     document.querySelector('.bgc_pic').appendChild(bgc_img);
+
+//--------------------//
     
 }
 changeQuiz()
@@ -205,3 +223,8 @@ btns.forEach((btn) => {
         }
     })
 });
+
+
+if(btn.className.includes("yes")){
+    score++
+}else(btn)
