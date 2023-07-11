@@ -166,28 +166,28 @@ const quizArr = [
 const rank = [
     {
         id: 0,
-        rank:`img/A.svg`,
-        commend:"<b>おめでとうございます！</b><br>優秀なwebデザイン科の学生になる準備はもう完璧にできたそうだよ～",
+        rank:"img/A.svg",
+        commend:"<b>おめでとうございます！</b><br>優秀なWebデザイン科の学生になる準備はもう完璧にできたそうだよ～",
     },
     {
         id: 1,
-        rank:`img/B.svg`,
-        commend:"<b>おめでとうございます！</b><br>webデザイン科の学生になる準備はもう大体できたそうだよ～",
+        rank:"img/B.svg",
+        commend:"<b>おめでとうございます！</b><br>Webデザイン科の学生になる準備はもう大体できたそうだよ～",
     },
     {
         id: 2,
-        rank:`img/C.svg`,
-        commend:"<b>お疲れ様です</b><br>webデザイン科の学生になるのはあなたに対して大変そうだがなんでも乗り越えるだろうか。",
+        rank:"img/C.svg",
+        commend:"<b>お疲れ様です</b><br>Webデザイン科の学生になるのはあなたに対して大変そうだがなんでも乗り越えるだろうか。",
     },
     {
         id: 3,
-        rank:`img/D.svg`,
-        commend:"<b>頑張ろう</b><br>あ～webデザイン科の学生になる準備はまだだろう。もっと調べて、深く知っていこうか。",
+        rank:"img/D.svg",
+        commend:"<b>頑張ろう</b><br>あ～Webデザイン科の学生になる準備はまだだろう。もっと調べて、深く知っていこうか。",
     },
     {
         id: 4,
-        rank:`img/E.svg`,
-        commend:"<b>頑張ろう</b><br>webデザイン科に入ったら厳しい挑戦に違いないだろう。自分の調子をよく調整してからもう一回診断をやってみようか。",
+        rank:"img/E.svg",
+        commend:"<b>頑張ろう！！</b><br>Webデザイン科に入ったら厳しい挑戦に違いないだろう。自分の調子をよく調整してからもう一回診断をやってみようか。",
     }
 ]
 //-----defination-----//
@@ -278,7 +278,7 @@ btns.forEach((btn) => {
                     jec_btn.classList.add("jec_hide");
                     hotpage.classList.add("hotpage_hide");
 
-                }else if( score >= 80, score < 90 ){
+                }else if( score >= 80 ){
 
                     rankingPic.src = rank[1].rank;
                     document.querySelector('.rank').appendChild(rankingPic);
@@ -288,7 +288,7 @@ btns.forEach((btn) => {
                     jec_btn.classList.add("jec_hide");
                     hotpage.classList.add("hotpage_hide");
 
-                }else if( score >= 70, score < 80 ){
+                }else if( score >= 70 ){
 
                     rankingPic.src = rank[2].rank;
                     document.querySelector('.rank').appendChild(rankingPic);
@@ -298,15 +298,15 @@ btns.forEach((btn) => {
                     jec_btn.classList.add("jec_hide");
                     hotpage.classList.add("hotpage_hide");
 
-                }else if( score >= 60, score < 70){
+                }else if( score >= 60 ){
 
                     rankingPic.src = rank[3].rank;
                     document.querySelector('.rank').appendChild(rankingPic);
 
                     commend.innerHTML = rank[3].commend;
 
-                    jec_btn.classList.add("jec_hide");
-                    hotpage.classList.add("hotpage_hide");
+                    get_doc.classList.add("get_doc_hide");
+                    
 
                 }else{
 
@@ -316,7 +316,7 @@ btns.forEach((btn) => {
                     commend.innerHTML = rank[4].commend;
 
                     jec_btn.classList.add("jec_hide");
-                    hotpage.classList.add("hotpage_hide");
+
                 };
 
             }else{

@@ -17,6 +17,7 @@ body {
   padding: 16px;
   margin: 0 auto;
   background-color: #1361A5;
+  overflow: hidden;
 }
 .test_body .frame {
   background-color: #ffffff;
@@ -62,18 +63,23 @@ body {
   border: 3px solid #73B7BB;
   border-radius: 30px;
   color: #343434;
+  font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
   font-weight: bold;
   transition-duration: 0.3s;
 }
 
 .test {
+  position: relative;
   width: 100%;
   height: 100%;
   border: 3px solid #73B7BB;
   border-radius: 20px;
   padding: 40px 16px;
   position: relative;
+  top: -100%;
+  right: -100vw;
   background-color: #ffffff;
 }
 .test .quiz_title {
@@ -96,6 +102,8 @@ body {
   border: 3px solid #73B7BB;
   border-radius: 30px;
   color: #343434;
+  font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
   font-weight: bold;
   transition-duration: 0.3s;
@@ -109,19 +117,25 @@ body {
   height: 500px;
 }
 .test .test_content .button {
+  font-size: 14px;
+  font-weight: bold;
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .score_page {
+  position: relative;
   width: 100%;
   height: 100%;
   border: 3px solid #73B7BB;
   border-radius: 20px;
   padding: 40px 16px;
   position: relative;
+  right: -100vw;
 }
 .score_page .jec, .score_page .get_doc {
   background-color: #73B7BB;
@@ -130,15 +144,18 @@ body {
 }
 .score_page .rank {
   position: relative;
-  margin: 0 auto;
-  width: 30%;
-  height: 20%;
+  margin: 40px auto;
+  width: 110px;
+  height: 100px;
 }
 .score_page .commend {
+  position: relative;
+  bottom: 0;
   color: #343434;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 35px;
   text-align: center;
+  margin: 50px auto;
 }
 
 b {
@@ -158,6 +175,7 @@ b {
 }
 
 .score_show {
+  position: absolute;
   width: 100%;
   height: 100%;
   border: 3px solid #73B7BB;
@@ -224,11 +242,13 @@ b {
   align-items: center;
   margin: 16px auto;
   width: 290px;
-  height: 60px;
+  height: 50px;
   background-color: #ffffff;
   border: 3px solid #73B7BB;
   border-radius: 30px;
   color: #343434;
+  font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
   font-weight: bold;
   transition-duration: 0.3s;
@@ -252,8 +272,8 @@ h1 {
 .bgc_pic {
   z-index: 0;
   position: absolute;
-  width: 300px;
-  top: 50%;
+  width: 250px;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.1;
