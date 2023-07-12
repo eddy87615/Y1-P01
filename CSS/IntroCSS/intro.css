@@ -298,7 +298,7 @@ main .webdesign_intro .img03::before {
 .class_intro img {
   position: absolute;
   z-index: 0;
-  width: 230px;
+  width: 280px;
   height: auto;
   bottom: 0;
   right: 0;
@@ -440,4 +440,56 @@ main a:hover, main ul > li > a:hover {
   right: 0;
   opacity: 1;
   overflow: hidden;
+}
+
+/*--------------------
+
+Tab Version
+
+--------------------*/
+@media screen and (min-width: 600px) {
+  footer .footer_link {
+    gap: 100px;
+  }
+  .webdesign_intro {
+    text-align: center;
+  }
+  .webdesign_intro .img {
+    width: 500px !important;
+  }
+  .webdesign_intro .img img {
+    width: 500px !important;
+  }
+  .class_intro img {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    height: 100%;
+    max-height: 250px;
+    padding-top: 24px;
+  }
+  footer .footer_link {
+    gap: 0;
+    width: 90%;
+  }
+  footer .footer_link .footer_link_a {
+    display: flex;
+    flex-direction: unset;
+  }
+  footer .footer_link .footer_link_a a {
+    margin: 8px;
+  }
+  .menu_body {
+    z-index: 10;
+    width: 70vw;
+    height: 100vh;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 0px 20px rgba(10, 60, 103, 0.5764705882);
+  }
 }/*# sourceMappingURL=intro.css.map */

@@ -72,7 +72,7 @@ body{
                 text-align: center;
 
                 .start_word{
-                    margin-bottom: 56px;
+                    margin: 16px 0 56px 0;
 
                     color: $text_color;
                 }
@@ -129,6 +129,8 @@ body{
         text-align: center;
 
         position: relative;
+
+        padding-top: 48px;
 
     }
 
@@ -206,8 +208,8 @@ body{
 
         margin: 40px auto;
 
-        width: 110px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
     }
 
     .commend{
@@ -221,7 +223,7 @@ body{
 
         text-align: center;
 
-        margin: 50px auto;
+        margin: 0 auto;
     }
 }
 
@@ -416,4 +418,70 @@ button:hover{
     background-color: $bg_color !important;
     border: 3px solid $main_color !important;
     color: $text_color !important;
+}
+
+@media screen and (min-width: 600px){
+
+    .test_content{
+
+        .quiz_title{
+            font-size: 32px;
+            line-height: 48px;
+
+            padding-top: 24px;
+        }
+
+        .bgc_pic{
+            width: 300px;
+        }
+
+    }
+
+    
+    .quiz_content{
+        position: relative;
+
+        top: 32px;
+    
+        font-size: 16px;
+        line-height: 24px;
+    
+        padding: 24px;
+    
+        color: $bg_color;
+    
+        text-align: center;
+    
+        // border: 1px solid $main_color;
+        background-color: $main_color;
+        border-radius: 16px ;
+    
+        margin: 24px 0;
+    }
+
+    .score_page{
+
+        .rank{
+            position: relative;
+    
+            margin: 40px auto;
+    
+            width: 180px;
+            height: 180px;
+        }
+
+        .commend{
+
+            font-size: 18px;
+            line-height: 40px;
+
+            padding-top: 10px;
+
+            b{
+                font-size: 30px;
+            }
+        }
+
+    }
+    
 }

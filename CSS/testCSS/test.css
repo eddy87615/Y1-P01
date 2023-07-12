@@ -49,7 +49,7 @@ body {
   text-align: center;
 }
 .test_body .frame .first_page .content_start .start_word {
-  margin-bottom: 56px;
+  margin: 16px 0 56px 0;
   color: #343434;
 }
 .test_body .frame .first_page button {
@@ -88,6 +88,7 @@ body {
   line-height: 32px;
   text-align: center;
   position: relative;
+  padding-top: 48px;
 }
 .test button {
   position: relative;
@@ -145,8 +146,8 @@ body {
 .score_page .rank {
   position: relative;
   margin: 40px auto;
-  width: 110px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
 }
 .score_page .commend {
   position: relative;
@@ -155,7 +156,7 @@ body {
   font-size: 14px;
   line-height: 35px;
   text-align: center;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 b {
@@ -302,4 +303,41 @@ button:hover {
   background-color: #ffffff !important;
   border: 3px solid #73B7BB !important;
   color: #343434 !important;
+}
+
+@media screen and (min-width: 600px) {
+  .test_content .quiz_title {
+    font-size: 32px;
+    line-height: 48px;
+    padding-top: 24px;
+  }
+  .test_content .bgc_pic {
+    width: 300px;
+  }
+  .quiz_content {
+    position: relative;
+    top: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #73B7BB;
+    border-radius: 16px;
+    margin: 24px 0;
+  }
+  .score_page .rank {
+    position: relative;
+    margin: 40px auto;
+    width: 180px;
+    height: 180px;
+  }
+  .score_page .commend {
+    font-size: 18px;
+    line-height: 40px;
+    padding-top: 10px;
+  }
+  .score_page .commend b {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=test.css.map */
