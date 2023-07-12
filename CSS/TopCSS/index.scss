@@ -689,16 +689,32 @@ Tab Version
     }
 
     .menu_body{
-        z-index: 10;
-    
         width: 70vw;
-        height: 100vh;
-        padding-top: 20%;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        box-shadow: -5px 0px 20px #0a3c6793;    
+    }
+}
 
-        box-shadow: -5px 0px 20px #0a3c6793;    }
+@media screen and (min-width: 1024px){
+
+    .menu_body{
+        width: 50vw;
+        box-shadow: -5px 0px 20px #0a3c6793;    
+    }
+
+    footer{
+        height: 100%;
+
+        .footer_link{
+
+            .footer_link_a{
+                display: flex;
+                flex-direction: unset;
+
+                a{
+                    margin: 16px;
+                }
+            }
+        }
+    }
+
 }

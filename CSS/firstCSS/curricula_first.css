@@ -182,6 +182,10 @@ header .ham_menu .ham_btn .btn_line {
 }
 
 /*-----section-----*/
+section ul {
+  padding: 0 16px;
+}
+
 .title {
   position: relative;
   margin-top: 80px;
@@ -218,15 +222,21 @@ header .ham_menu .ham_btn .btn_line {
 .content h3 {
   position: relative;
   font-size: 16px;
-  padding: 16px 0 16px 40px;
+  padding: 24px 0 24px 40px;
   border-bottom: 3px solid #73B7BB;
   color: #343434;
-  margin: 16px;
 }
 .content p {
   color: #343434;
   font-size: 14px;
   line-height: 24px;
+}
+.content .last {
+  border-bottom: 0;
+}
+
+#last {
+  border-top: 3px solid #73B7BB;
 }
 
 .coding ul,
@@ -234,7 +244,6 @@ header .ham_menu .ham_btn .btn_line {
 .basic ul {
   display: none;
   border-bottom: 3px solid #73B7BB;
-  margin: 0 16px;
 }
 
 .content > ul li > p, .content > ul li > img {
@@ -278,7 +287,7 @@ footer {
   justify-content: end;
   border-top: 3px solid #1361A5;
   background-color: #ffffff;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 footer .footer_link {
   margin: 0 auto;

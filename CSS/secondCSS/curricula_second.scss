@@ -237,6 +237,10 @@ header{
 
 /*-----section-----*/
 
+section ul{
+    padding: 0 16px;
+}
+
 .title{
     position: relative;
 
@@ -290,7 +294,14 @@ header{
 
         color: $text_color;
 
-        margin: 16px;
+        // margin: 16px;
+
+        padding: 24px 0 24px 40px;
+    }
+
+    .last{
+        border-bottom: 0;
+        // margin-bottom: 8px;
     }
 
     p{
@@ -301,6 +312,10 @@ header{
 
         line-height: 24px;
     }
+}
+
+#last{
+    border-top: 3px solid $main_color;
 }
 
 // .content  > ul > li > ul{
@@ -367,7 +382,7 @@ footer{
     border-top: 3px solid $base_color;
     background-color: $bg_color;
 
-    margin-top: 32px;
+    // margin-top: 32px;
 
     .footer_link{
         margin: 0 auto;

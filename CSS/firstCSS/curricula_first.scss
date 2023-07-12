@@ -237,6 +237,10 @@ header{
 
 /*-----section-----*/
 
+section ul{
+    padding: 0 16px;
+}
+
 .title{
     position: relative;
 
@@ -284,13 +288,13 @@ header{
 
         font-size: 16px;
 
-        padding: 16px 0 16px 40px;
+        padding: 24px 0 24px 40px;
 
         border-bottom: 3px solid $main_color;
 
         color: $text_color;
 
-        margin: 16px;
+        // margin: 16px;
     }
 
     p{
@@ -301,8 +305,16 @@ header{
 
         line-height: 24px;
     }
+
+    .last{
+        border-bottom: 0;
+        // margin-bottom: 8px;
+    }
 }
 
+#last{
+    border-top: 3px solid $main_color;
+}
 // .content  > ul > li > ul{
 //     height: 0;
 
@@ -315,7 +327,8 @@ header{
     display: none;
 
     border-bottom: 3px solid $main_color;
-    margin: 0 16px;
+    // border-top: 3px solid $main_color;
+    // margin: 0 16px;
 }
 
 .content > ul li > p, .content > ul li > img{
@@ -367,7 +380,7 @@ footer{
     border-top: 3px solid $base_color;
     background-color: $bg_color;
 
-    margin-top: 32px;
+    margin-top: 16px;
 
     .footer_link{
         margin: 0 auto;
