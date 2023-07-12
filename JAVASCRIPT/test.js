@@ -315,7 +315,7 @@ btns.forEach((btn) => {
 
                     commend.innerHTML = rank[4].commend;
 
-                    jec_btn.classList.add("jec_hide");
+                    get_doc.classList.add("get_doc_hide");
 
                 };
 
