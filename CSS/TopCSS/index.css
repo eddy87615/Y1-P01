@@ -535,11 +535,6 @@ Tab Version
     top: 240px;
   }
   .test_intro_content::before {
-    content: "";
-    background-image: url(../../img/tag_アートボード\ 1.svg);
-    position: absolute;
-    top: -30px;
-    background-repeat: no-repeat;
     height: 90px;
     width: 90px;
   }
@@ -567,6 +562,63 @@ Tab Version
   }
 }
 @media screen and (min-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .intro, main .test_intro, main .test_intro_content {
+    width: 80%;
+  }
+  main .test_intro_content {
+    margin: 0 auto;
+  }
+  body {
+    width: 100%;
+  }
+  .KV {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .KV .key_v {
+    background-image: url(../../img/KV02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-position: 0 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .KV .key_v .title01 {
+    font-size: 50px;
+    margin: 0;
+    bottom: 300px;
+    left: 50px !important;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    animation: none;
+  }
+  .KV .key_v .title02 {
+    font-size: 50px;
+    margin: 0;
+    bottom: 200px;
+    left: 50px !important;
+    right: 50px;
+    padding-bottom: 24px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    animation: none;
+  }
+  .KV .key_v .title03 {
+    animation: none;
+    font-size: 30px;
+    bottom: 126px;
+    right: 50px !important;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+  }
   .menu_body {
     width: 50vw;
     box-shadow: -5px 0px 20px rgba(10, 60, 103, 0.5764705882);
