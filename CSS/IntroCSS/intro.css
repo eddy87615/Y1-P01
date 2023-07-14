@@ -492,4 +492,10 @@ Tab Version
     align-items: center;
     box-shadow: -5px 0px 20px rgba(10, 60, 103, 0.5764705882);
   }
+  main h1 {
+    font-size: 40px;
+  }
+  main h2 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=intro.css.map */

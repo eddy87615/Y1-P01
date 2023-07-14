@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).on('scroll', function(){
-    if($(window).scrollTop()>700){
+    if($(window).scrollTop()>500){
         $('header').addClass('header_change_color');
     }else{
         $('header').removeClass('header_change_color');
