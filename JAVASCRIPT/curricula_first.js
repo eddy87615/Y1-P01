@@ -1,7 +1,5 @@
 'use strict';
-
 //-----folder-----//
-
 $(document).ready(function() {
     $('.content > ul > li > h3').click(function(event) {
         event.preventDefault();
@@ -11,7 +9,6 @@ $(document).ready(function() {
         $(this).parent().find('ul').slideToggle();
     });
 });
-
 //-----menu-----//
 
 const ham = document.querySelector('.ham_menu');
@@ -24,8 +21,6 @@ ham.addEventListener(
         menuBody.classList.toggle('menu_body_clicked');
     }
 );
-
-
 
 // // 获取所有的ul元素
 // var ulElements = document.querySelectorAll('ul');

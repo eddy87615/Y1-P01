@@ -103,7 +103,7 @@ header .ham_menu .ham_btn .btn_line {
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  padding-top: 20%;
+  padding-top: 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +113,7 @@ header .ham_menu .ham_btn .btn_line {
   width: 200px;
   height: auto;
   position: absolute;
-  top: 8%;
+  top: 5%;
 }
 .menu_body .menu_link {
   list-style: none;
@@ -225,7 +225,6 @@ section ul {
   padding: 32px 0 32px 40px;
   border-bottom: 3px solid #73B7BB;
   color: #343434;
-  padding: 24px 0 24px 40px;
 }
 .content .last {
   border-bottom: 0;
@@ -245,7 +244,7 @@ section ul {
 .basic ul {
   display: none;
   border-bottom: 3px solid #73B7BB;
-  margin: 0 16px;
+  margin: 0 auto;
 }
 
 .content > ul li > p, .content > ul li > img {
@@ -366,6 +365,31 @@ footer .copyright {
 }
 
 /*-----hover-----*/
+.menu_link li a:hover {
+  background-color: #73B7BB;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+.menu_btn li .menu_btn01:hover {
+  background-color: #fff;
+  border: 3px solid #73B7BB;
+  color: #343434;
+  transition-duration: 0.3s;
+}
+
+.menu_btn li .menu_btn02:hover {
+  background-color: #73B7BB;
+  border: 3px solid #73B7BB;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+/*--------------------
+
+Tab Version
+
+--------------------*/
 @media screen and (min-width: 600px) {
   footer .footer_link {
     gap: 100px;
@@ -389,17 +413,46 @@ footer .copyright {
     margin: 8px;
   }
   .menu_body {
-    z-index: 10;
     width: 70vw;
-    height: 100vh;
-    padding-top: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     box-shadow: -5px 0px 20px rgba(10, 60, 103, 0.5764705882);
   }
   .content > ul {
     margin: 5%;
+  }
+}
+/*--------------------
+
+PC Version
+
+--------------------*/
+@media screen and (min-width: 1024px) {
+  .menu_body {
+    width: 50vw;
+    box-shadow: -5px 0px 20px rgba(10, 60, 103, 0.5764705882);
+  }
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .content h2 {
+    font-size: 30px;
+  }
+  .content h3 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  footer .footer_link {
+    gap: 0;
+    width: 90%;
+  }
+  footer .footer_link .footer_link_a {
+    display: flex;
+    flex-direction: unset;
+  }
+  footer .footer_link .footer_link_a a {
+    margin: 8px 24px;
   }
 }/*# sourceMappingURL=curricula_second.css.map */

@@ -420,7 +420,17 @@ button:hover{
     color: $text_color !important;
 }
 
+/*--------------------
+
+Tab Version
+
+--------------------*/
+
 @media screen and (min-width: 600px){
+
+    .start_word{
+        font-size: 24px;
+    }
 
     .test_content{
 
@@ -482,6 +492,39 @@ button:hover{
             }
         }
 
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+
+    .quiz_content{
+        margin: 32px 40px;
+
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+
+    .quiz_content{
+        margin: 32px 80px;
+
+        font-size: 18px;
+    }
+
+    .score_page{
+
+        .commend{
+            line-height: 50px;
+
+            font-size: 20px;
+
+            b{
+                font-size: 28px;
+            }
+        }
     }
     
 }

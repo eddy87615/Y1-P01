@@ -305,7 +305,15 @@ button:hover {
   color: #343434 !important;
 }
 
+/*--------------------
+
+Tab Version
+
+--------------------*/
 @media screen and (min-width: 600px) {
+  .start_word {
+    font-size: 24px;
+  }
   .test_content .quiz_title {
     font-size: 32px;
     line-height: 48px;
@@ -339,5 +347,24 @@ button:hover {
   }
   .score_page .commend b {
     font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .quiz_content {
+    margin: 32px 40px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .quiz_content {
+    margin: 32px 80px;
+    font-size: 18px;
+  }
+  .score_page .commend {
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .score_page .commend b {
+    font-size: 28px;
   }
 }/*# sourceMappingURL=test.css.map */

@@ -143,7 +143,7 @@ header{
 
     width: 100vw;
     height: 100vh;
-    padding-top: 20%;
+    padding-top: 8%;
 
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ header{
         height: auto;
 
         position: absolute;
-        top: 8%;
+        top: 5%;
 
     }
 
@@ -366,6 +366,24 @@ h3::after{
     transform: translateY(-50%);
     right: 16px;
 }
+.h3180deg{
+    content: '';
+    position: absolute;
+
+    width: 20px;
+    height: 16px;
+
+    background-image: url(../../img/opencontent.svg);
+    background-repeat: no-repeat;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    
+    transform: rotate(180deg);
+}
+
+
 
 /*-----footer-----*/
 
@@ -475,15 +493,30 @@ footer{
 
 /*-----hover-----*/
 
-// h3:hover{
-//     border-bottom: 3px solid $base_color;
-// }
+.menu_link li a:hover{
+    background-color: $main_color;
+    // border: 3px solid $bg_color;
+    color: #fff;
 
-// .coding ul:hover,
-// .design ul:hover,
-// .basic ul:hover{
-//     border-bottom: 3px solid $base_color;
-// }
+    transition-duration: 0.3s;
+}
+
+.menu_btn li .menu_btn01:hover{
+    background-color: #fff;
+    border: 3px solid $main_color;
+    color: #343434;
+
+    transition-duration: 0.3s;
+
+}
+.menu_btn li .menu_btn02:hover{
+    background-color: $main_color;
+    border: 3px solid $main_color;
+    color: #fff;
+
+    transition-duration: 0.3s;
+
+}
 
 /*--------------------
 
@@ -525,21 +558,62 @@ Tab Version
     }
 
     .menu_body{
-        z-index: 10;
-    
         width: 70vw;
-        height: 100vh;
-        padding-top: 20%;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        box-shadow: -5px 0px 20px #0a3c6793;
+        box-shadow: -5px 0px 20px #0a3c6793;    
     }
 
     .content > ul{
         margin: 5%;
+    }
+}
+
+/*--------------------
+
+PC Version
+
+--------------------*/
+
+@media screen and (min-width: 1024px){
+
+    .menu_body{
+        width: 50vw;
+        box-shadow: -5px 0px 20px #0a3c6793;    
+    }
+    
+    main{
+        width: 100%;
+
+        margin: 0 auto;
+    }
+
+    .content{
+        h2{
+            font-size: 30px;
+        }
+        h3{
+            font-size: 18px;
+        }
+        p{
+            font-size: 16px;
+
+            line-height: 32px;
+        }
+    }
+
+    footer{
+
+        .footer_link{
+            gap: 0;
+            width: 90%;
+
+            .footer_link_a{
+                display: flex;
+                flex-direction: unset;
+
+                a{
+                    margin: 8px 24px;
+                }
+            }
+        }
     }
 }

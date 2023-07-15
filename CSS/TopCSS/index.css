@@ -101,7 +101,7 @@ header .ham_menu .ham_btn .btn_line {
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  padding-top: 20%;
+  padding-top: 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,7 +111,7 @@ header .ham_menu .ham_btn .btn_line {
   width: 200px;
   height: auto;
   position: absolute;
-  top: 8%;
+  top: 5%;
 }
 .menu_body .menu_link {
   list-style: none;
@@ -155,7 +155,7 @@ header .ham_menu .ham_btn .btn_line {
   flex-direction: column;
 }
 .menu_body .menu_btn a {
-  margin-top: 48px;
+  margin-top: 20%;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -635,5 +635,15 @@ Tab Version
   }
   .intro h2 {
     font-size: 32px;
+  }
+  .intro p {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .test_intro_content h2 {
+    font-size: 24px;
+  }
+  .test_intro_content p {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=index.css.map */
