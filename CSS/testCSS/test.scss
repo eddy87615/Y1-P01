@@ -308,6 +308,8 @@ b{
     top: -100%;
     right: 0;
 
+    overflow: scroll;
+
     background-color: $bg_color;
 
     transition-duration: 0.8s;

@@ -226,6 +226,7 @@ b {
   position: relative;
   top: -100%;
   right: 0;
+  overflow: scroll;
   background-color: #ffffff;
   transition-duration: 0.8s;
 }
