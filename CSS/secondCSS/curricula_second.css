@@ -267,16 +267,20 @@ h3::before {
   left: 16px;
 }
 
-h3::after {
-  content: "";
+span {
   position: absolute;
-  width: 20px;
-  height: 16px;
-  background-image: url(../../img/opencontent.svg);
-  background-repeat: no-repeat;
   top: 50%;
   transform: translateY(-50%);
   right: 16px;
+}
+span img {
+  width: 20px;
+  transition-duration: 0.3s;
+}
+
+.span_open_content img {
+  transform: rotate(180deg);
+  transition-duration: 0.3s;
 }
 
 /*-----footer-----*/

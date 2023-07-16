@@ -9,6 +9,8 @@ $(document).ready(function() {
         $(this).parent().siblings().find('ul').slideUp();
       //將自己的ul，判斷做摺疊效果
         $(this).parent().find('ul').slideToggle();
+
+        // $(this).toggleClass("span_open_content");
     });
 });
 
