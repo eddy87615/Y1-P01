@@ -366,7 +366,8 @@ h3::after{
     transform: translateY(-50%);
     right: 16px;
 }
-.h3180deg{
+.h3_click::after{
+
     content: '';
     position: absolute;
 
@@ -379,11 +380,9 @@ h3::after{
     top: 50%;
     transform: translateY(-50%);
     right: 16px;
-    
+
     transform: rotate(180deg);
 }
-
-
 
 /*-----footer-----*/
 
