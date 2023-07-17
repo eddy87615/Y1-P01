@@ -526,12 +526,38 @@ PC Version
     width: 80%;
     margin: 0 auto;
   }
-  main .content p {
+  main .content .what {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img title" "img content";
+    gap: 20px;
+  }
+  main .content .what .img {
+    grid-area: img;
+    width: 400px !important;
+    height: auto !important;
+    padding: 0;
+    top: 0;
+    left: 0;
+  }
+  main .content .what .img img {
+    border: none;
+    width: 400px !important;
+    height: auto !important;
+    top: 0;
+    left: 0;
+  }
+  main .content .what p {
+    grid-area: content;
     font-size: 18px;
     line-height: 40px;
   }
-  main .content h2 {
+  main .content .what h2 {
+    grid-area: title;
     font-size: 30px;
+    padding: 16px 0 0 0;
   }
   main .webdesign_intro {
     margin-top: 80px;
@@ -541,6 +567,12 @@ PC Version
   }
   main .test_lead h3 {
     font-size: 24px;
+  }
+  .img01::before {
+    display: none;
+  }
+  .img03::before {
+    display: none;
   }
   footer .footer_link {
     gap: 0;

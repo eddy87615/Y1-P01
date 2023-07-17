@@ -242,8 +242,8 @@ section ul {
 .coding ul,
 .design ul,
 .basic ul {
-  display: none;
   border-bottom: 3px solid #73B7BB;
+  transition-duration: 0.3s;
 }
 
 .content > ul li > p, .content > ul li > img {
@@ -268,7 +268,7 @@ h3::before {
 
 .coding,
 .desgn,
-.basci {
+.basic {
   position: relative;
 }
 
@@ -285,6 +285,16 @@ span img {
 
 .span_open_content img {
   transform: rotate(180deg);
+  transition-duration: 0.3s;
+}
+
+.close_container {
+  transition-duration: 0.3s;
+  display: none;
+}
+
+.open_container {
+  display: block;
   transition-duration: 0.3s;
 }
 

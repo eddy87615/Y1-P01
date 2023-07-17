@@ -324,11 +324,13 @@ section ul{
 .coding ul,
 .design ul,
 .basic ul{
-    display: none;
+    // display: none;
 
     border-bottom: 3px solid $main_color;
     // border-top: 3px solid $main_color;
     // margin: 0 16px;
+
+    transition-duration: 0.3s;
 }
 
 .content > ul li > p, .content > ul li > img{
@@ -369,7 +371,7 @@ h3::before{
 
 .coding,
 .desgn,
-.basci{
+.basic{
     position: relative;
 }
 
@@ -391,6 +393,15 @@ span{
 
         transition-duration: 0.3s;
     }
+}
+
+.close_container{
+    transition-duration: 0.3s;
+    display: none;
+}
+.open_container{
+    display: block;
+    transition-duration: 0.3s;
 }
 
 /*-----footer-----*/
