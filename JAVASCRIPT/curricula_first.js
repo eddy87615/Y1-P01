@@ -13,16 +13,22 @@
 // });
 
 const all_containers = document.getElementsByClassName("container_of_class");
-console.log(all_containers);
+
+function closeAllContainer(curr){
+  for ( let index = 0; index < all_containers.length; index++ ){
+    if( curr != index){
+      all_containers[index].getElementsByTagName("ul")[0].style.display = "none";
+      all_containers[index].getElementsByTagName("span")[0].classList.remove("span_open_content");
+    };
+  };
+};
 
 for ( let index = 0; index < all_containers.length; index++ ){
-  // all_containers[index].getElementsByTagName("ul")[0].style.display = "none";
 
   all_containers[index].addEventListener(
     'click', function(){
       closeAllContainer(index);
-      // all_containers[index].getElementsByTagName("ul")[0].style.display = "block";
-      // all_containers[index].getElementsByTagName("span")[0].classList.add("span_open_content");
+
       if(all_containers[index].getElementsByTagName("ul")[0].style.display == "block"){
         all_containers[index].getElementsByTagName("span")[0].classList.remove("span_open_content");
         all_containers[index].getElementsByTagName("ul")[0].style.display = "none"
@@ -32,16 +38,6 @@ for ( let index = 0; index < all_containers.length; index++ ){
       }
     }
   )
-}
-
-function closeAllContainer(curr){
-  for ( let index = 0; index < all_containers.length; index++ ){
-
-    if( curr != index){
-      all_containers[index].getElementsByTagName("ul")[0].style.display = "none";
-      all_containers[index].getElementsByTagName("span")[0].classList.remove("span_open_content");
-    }
-  }
 }
 
 closeAllContainer(-1);
@@ -58,51 +54,3 @@ ham.addEventListener(
         menuBody.classList.toggle('menu_body_clicked');
     }
 );
-
-// // 获取所有的ul元素
-// var ulElements = document.querySelectorAll('ul');
-
-// // 创建额外的div元素
-// var additionalDiv = document.createElement('div');
-// additionalDiv.id = 'popupDiv';
-
-// // 设置额外div元素的样式
-// additionalDiv.style.position = 'fixed';
-// additionalDiv.style.bottom = '0';
-// additionalDiv.style.left = '0';
-// additionalDiv.style.width = '100%';
-// additionalDiv.style.background = 'rgba(0, 0, 0, 0.8)';
-// additionalDiv.style.color = '#fff';
-// additionalDiv.style.padding = '10px';
-// additionalDiv.style.transition = 'transform 0.3s ease-in-out';
-// additionalDiv.style.transform = 'translateY(100%)';
-
-// // 将额外div元素添加到body中
-// document.body.appendChild(additionalDiv);
-
-// // 绑定点击事件
-// ulElements.forEach(function(ulElement) {
-//   ulElement.addEventListener('click', function(event) {
-//     // 检查点击的是ul元素
-//     if (event.target.tagName.toLowerCase() === 'ul') {
-//       // 获取点击ul元素内第一个li元素的内容
-//       var liContent = event.target.querySelector('li').innerHTML;
-
-//       // 设置额外div元素的内容
-//       additionalDiv.innerHTML = liContent;
-
-//       // 显示额外div元素
-//       setTimeout(function() {
-//         additionalDiv.style.transform = 'translateY(0)';
-//       }, 100);
-
-//       // 点击额外div元素时隐藏它
-//       additionalDiv.addEventListener('click', function() {
-//         additionalDiv.style.transform = 'translateY(100%)';
-//         setTimeout(function() {
-//           additionalDiv.innerHTML = ''; // 清空内容
-//         }, 300);
-//       });
-//     }
-//   });
-// });
