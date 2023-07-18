@@ -18,7 +18,6 @@ function closeAllContainer(curr){
   for ( let index = 0; index < all_containers.length; index++ ){
     if( curr != index){
       all_containers[index].getElementsByTagName("ul")[0].style.display = "none";
-      // all_containers[index].getElementsByTagName("ul")[0].classList.add("close_container");
       all_containers[index].getElementsByTagName("span")[0].classList.remove("span_open_content");
     }
   }

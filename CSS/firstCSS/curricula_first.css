@@ -226,6 +226,7 @@ section ul {
   padding: 32px 0 32px 40px;
   border-bottom: 3px solid #73B7BB;
   color: #343434;
+  cursor: pointer;
 }
 .content p {
   color: #343434;

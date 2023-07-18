@@ -19,9 +19,9 @@ ham.addEventListener(
     }
 );
 
-for( let i = 0; i < 100; i++){
-    setTimeout(function(){
-        console.log(Date());
-    },1000*i
-    );
-}
+// for( let i = 0; i < 100; i++){
+//     setTimeout(function(){
+//         console.log(Date());
+//     },1000*i
+//     );
+// }
