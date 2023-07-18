@@ -390,6 +390,10 @@ footer .copyright {
   transition-duration: 0.3s;
 }
 
+.footer_link a:hover {
+  color: #1361A5;
+}
+
 /*--------------------
 
 Tab Version

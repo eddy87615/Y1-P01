@@ -576,6 +576,10 @@ PC Version
   .img03::before {
     display: none;
   }
+  .menu_body {
+    width: 50vw;
+    box-shadow: -5px 0px 20px rgba(10, 60, 103, 0.5764705882);
+  }
   footer .footer_link {
     gap: 0;
     width: 90%;
