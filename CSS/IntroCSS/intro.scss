@@ -684,7 +684,7 @@ PC Version
 
             .what{
 
-                margin: 40px auto;
+                margin: 56px auto;
 
                 display: grid;
                 grid-template-columns: 1fr 3fr;
@@ -695,9 +695,9 @@ PC Version
                 gap: 20px;
 
                 .img{
-                    // border: none;
+                    border: 10px solid $base_color;
                     grid-area: img;
-                    width: 400px !important;
+                    width: 500px !important;
                     height: auto !important;
 
                     padding: 0;
@@ -705,9 +705,11 @@ PC Version
                     top: 0;
                     left: 0;
 
+                    box-shadow: 4px 4px 5px 1px #93a6a8;
+
                     img{
                         border: none;
-                        width: 400px !important;
+                        width: 500px !important;
                         height: auto !important;
 
                         top: 0;
