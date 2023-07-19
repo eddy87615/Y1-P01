@@ -157,7 +157,7 @@ header .ham_menu .ham_btn .btn_line {
   flex-direction: column;
 }
 .menu_body .menu_btn a {
-  margin-top: 48px;
+  margin-top: 10%;
   text-decoration: none;
   display: flex;
   justify-content: center;
