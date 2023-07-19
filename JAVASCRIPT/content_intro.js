@@ -11,6 +11,14 @@ ham.addEventListener(
     }
 );
 
-$(".back_top").click(function(){
-    $("html, body").animate({ scrollTop: 0}, "slow")
-});
+// $(".back_top").click(function(){
+//     $("html, body").animate({ scrollTop: 0}, "slow")
+// });
+
+const backToTopButton = document.querySelector(".back_top");
+
+backToTopButton.onclick = () =>
+  document.documentElement.scroll({
+    top: 0,
+    behavior: "smooth"
+  });

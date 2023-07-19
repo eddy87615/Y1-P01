@@ -27,3 +27,27 @@ ham.addEventListener(
 //     },1000*i
 //     );
 // }
+
+$(document).on('scroll', function(){
+    if($(window).scrollTop()>600){
+        $('.Web_design').addClass('Web_design_show');
+    }else{
+        $('.Web_design').removeClass('Web_design_show');
+    }
+});
+
+$(document).on('scroll', function(){
+    if($(window).scrollTop()>800){
+        $('.Web_learning').addClass('Web_learning_show');
+    }else{
+        $('.Web_learning').removeClass('Web_learning_show');
+    }
+});
+
+$(document).on('scroll', function(){
+    if($(window).scrollTop()>1000){
+        $('.intro_test').addClass('intro_test_show');
+    }else{
+        $('.intro_test').removeClass('intro_test_show');
+    }
+});

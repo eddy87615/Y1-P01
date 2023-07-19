@@ -245,7 +245,7 @@ section ul{
     position: relative;
 
     margin-top: 80px;
-    padding: 32px 16px 32px 40px;
+    padding: 32px 16px 32px 48px;
 
     font-size: 30px;
 
@@ -523,6 +523,13 @@ footer{
 
 }
 
+h3:hover{
+    background-color: $main_color;
+
+    transition-duration: 0.3s;
+    color: $bg_color;
+}
+
 .footer_link a:hover{
     color: $base_color;
 }
@@ -602,6 +609,8 @@ PC Version
         }
         h3{
             font-size: 18px;
+
+            transition-duration: 0.3s;
         }
         p{
             font-size: 16px;

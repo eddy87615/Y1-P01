@@ -189,7 +189,7 @@ section ul {
 .title {
   position: relative;
   margin-top: 80px;
-  padding: 32px 16px 32px 40px;
+  padding: 32px 16px 32px 48px;
   font-size: 30px;
   background-image: url(../../img/slash-02.svg);
   background-repeat: no-repeat;
@@ -390,6 +390,12 @@ footer .copyright {
   transition-duration: 0.3s;
 }
 
+h3:hover {
+  background-color: #73B7BB;
+  transition-duration: 0.3s;
+  color: #ffffff;
+}
+
 .footer_link a:hover {
   color: #1361A5;
 }
@@ -448,6 +454,7 @@ PC Version
   }
   .content h3 {
     font-size: 18px;
+    transition-duration: 0.3s;
   }
   .content p {
     font-size: 16px;

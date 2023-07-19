@@ -316,6 +316,21 @@ section{
 }
 .intro{
     margin: 0 auto;
+    
+    opacity: 0;
+
+    transition-duration: 0.5s;
+}
+
+.Web_design_show{
+    opacity: 1;
+
+    transition-duration: 0.5s;
+}
+.Web_learning_show{
+    opacity: 1;
+
+    transition-duration: 0.5s;
 }
 
 .Web_learning{
@@ -389,6 +404,17 @@ p{
     border: 3px solid $main_color;
 
     transition-duration: 0.3s;
+}
+
+.intro_test{
+    opacity: 0;
+
+    transition-duration: 0.5s;
+}
+.intro_test_show{
+    opacity: 1;
+
+    transition-duration: 0.5s;
 }
 
 .test_all{
@@ -631,6 +657,19 @@ section a:hover{
     }
 }
 
+@keyframes text_pc{
+    0%{
+        left: 66px;
+    }
+    50%{
+        left: 74px;
+    }
+    100%{
+        left: 66px;
+    }
+}
+
+
 /*--------------------
 
 Tab Version
@@ -709,7 +748,7 @@ Tab Version
     }
 
     .KV{
-        height: 600px;
+        height: 90vh;
         width: 100%;
         overflow: hidden;
         .key_v{
@@ -724,21 +763,20 @@ Tab Version
             transform: translateX(-50%);
 
             .title01{
-                font-size: 50px;
+                font-size: 60px;
                 margin: 0;
                 bottom: 300px;
-                left: 50px !important;
+                left: 50px;
 
                 background-color: rgba(255, 255, 255, 0);
                 color: $bg_color;
 
-                animation: none;
             }
             .title02{
-                font-size: 50px;
+                font-size: 60px;
                 margin: 0;
                 bottom: 200px;
-                left: 50px !important;
+                left: 50px;
                 right: 50px;
 
                 padding-bottom: 24px;
@@ -752,8 +790,8 @@ Tab Version
             }
             .title03{
                 animation: none;
-                font-size: 30px;
-                bottom: 126px;
+                font-size: 40px;
+                bottom: 120px;
                 right: 50px !important;
 
                 background-color: rgba(255, 255, 255, 0);
