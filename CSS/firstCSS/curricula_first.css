@@ -232,7 +232,7 @@ section ul {
   border-bottom: 0;
 }
 
-#last {
+#last01, #last02 {
   border-top: 3px solid #73B7BB;
 }
 
