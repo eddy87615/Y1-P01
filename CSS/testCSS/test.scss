@@ -209,8 +209,8 @@ body{
 
         margin: 40px auto;
 
-        width: 180px;
-        height: 180px;
+        width: 100px;
+        height: 100px;
     }
 
     .commend{
@@ -318,7 +318,7 @@ b{
 
 .rank_btn{
     position: absolute;
-    bottom: 50px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -480,8 +480,8 @@ Tab Version
     
             margin: 40px auto;
     
-            width: 180px;
-            height: 180px;
+            width: 120px;
+            height: 120px;
         }
 
         .commend{
@@ -507,10 +507,84 @@ Tab Version
 
         font-size: 16px;
     }
+
+    .test_body{
+        .frame{
+            .first_page{
+                background-size: 400px;
+                background-position: 50% 600px;
+
+                    button{
+                        width: 250px;
+                        height: 80px;
+                        border-radius: 50px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .score_page{
+
+            .commend{
+                line-height: 50px;
+    
+                font-size: 20px;
+    
+                b{
+                    font-size: 28px;
+                }
+            }
+    
+            .rank_btn{
+                width: 300px;
+                button{
+                    width: 300px;
+                    height: 80px;
+                    border-radius: 100px;
+                    font-size: 16px;
+                }
+            }
+    
+            .rank{
+                width: 200px;
+                height: 200px;
+                img{
+    
+                }
+            }
+        }
+    
+        .test{
+            .button{
+                button{
+                    width: 250px;
+                    height: 80px;
+                    border-radius: 50px;
+                    font-size: 16px;
+                }
+            }
+        }
     
 }
 
 @media screen and (min-width: 1024px){
+
+    .test_body{
+        .frame{
+            .first_page{
+                background-size: 400px;
+                background-position: 50% 600px;
+
+                    button{
+                        width: 250px;
+                        height: 80px;
+                        border-radius: 50px;
+                        font-size: 16px;
+                    }
+        }
+    }
+}
 
     .quiz_content{
         margin: 32px 80px;
@@ -527,6 +601,35 @@ Tab Version
 
             b{
                 font-size: 28px;
+            }
+        }
+
+        .rank_btn{
+            width: 300px;
+            button{
+                width: 300px;
+                height: 80px;
+                border-radius: 100px;
+                font-size: 16px;
+            }
+        }
+
+        .rank{
+            width: 200px;
+            height: 200px;
+            img{
+
+            }
+        }
+    }
+
+    .test{
+        .button{
+            button{
+                width: 250px;
+                height: 80px;
+                border-radius: 50px;
+                font-size: 16px;
             }
         }
     }

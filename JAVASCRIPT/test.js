@@ -116,7 +116,7 @@ const quizArr = [
         id: 13,
         title: "<br><br>１４．私は黙りっぱなしより自分から話す方が好き。",
         content: ``,
-        img: `img/對話框_アートボード 1.svg`,
+        img: `img/talk.svg`,
         bubble:``
     },
     {
