@@ -147,8 +147,8 @@ body {
 .score_page .rank {
   position: relative;
   margin: 40px auto;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 .score_page .commend {
   position: relative;
@@ -244,10 +244,10 @@ b {
   align-items: center;
   margin: 16px auto;
   width: 290px;
-  height: 50px;
+  height: 60px;
   background-color: #ffffff;
   border: 3px solid #73B7BB;
-  border-radius: 30px;
+  border-radius: 50px;
   color: #343434;
   font-size: 14px;
   font-weight: bold;
