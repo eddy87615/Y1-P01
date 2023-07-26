@@ -29,7 +29,7 @@ ham.addEventListener(
 // }
 
 $(document).on('scroll', function(){
-    if($(window).scrollTop()>600){
+    if($(window).scrollTop()>300){
         $('.Web_design').addClass('Web_design_show');
     }else{
         $('.Web_design').removeClass('Web_design_show');
@@ -37,7 +37,7 @@ $(document).on('scroll', function(){
 });
 
 $(document).on('scroll', function(){
-    if($(window).scrollTop()>800){
+    if($(window).scrollTop()>700){
         $('.Web_learning').addClass('Web_learning_show');
     }else{
         $('.Web_learning').removeClass('Web_learning_show');
