@@ -377,7 +377,7 @@ Tab Version
   }
   .score_page .rank_btn button {
     width: 300px;
-    height: 80px;
+    height: 60px;
     border-radius: 100px;
     font-size: 16px;
   }
@@ -398,7 +398,7 @@ Tab Version
     background-position: 50% 600px;
   }
   .test_body .frame .first_page button {
-    width: 250px;
+    width: 350px;
     height: 80px;
     border-radius: 50px;
     font-size: 16px;
@@ -419,17 +419,17 @@ Tab Version
   }
   .score_page .rank_btn button {
     width: 300px;
-    height: 50px;
+    height: 60px;
     border-radius: 100px;
     font-size: 16px;
   }
   .score_page .rank {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
   .test .button button {
-    width: 250px;
-    height: 60px;
+    width: 300px;
+    height: 80px;
     border-radius: 50px;
     font-size: 16px;
   }
