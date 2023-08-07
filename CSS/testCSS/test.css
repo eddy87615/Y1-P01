@@ -43,14 +43,20 @@ body {
   flex-direction: column;
   background-image: url(../../img/coding01.svg);
   background-repeat: no-repeat;
-  background-size: 300px 300px;
-  background-position: 50% 480px;
+  background-size: 250px 250px;
+  background-position: 50% 550px;
 }
 .test_body .frame .first_page .content_start {
   text-align: center;
 }
 .test_body .frame .first_page .content_start .start_word {
   margin: 16px 0 56px 0;
+  font-size: 20px;
+  line-height: 40px;
+  color: #141414;
+}
+.test_body .frame .first_page .content_start .start_word .all_question {
+  font-size: 16px;
   color: #343434;
 }
 .test_body .frame .first_page button {
@@ -63,7 +69,7 @@ body {
   background-color: #ffffff;
   border: 3px solid #73B7BB;
   border-radius: 30px;
-  color: #343434;
+  color: #141414;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
@@ -84,7 +90,7 @@ body {
   background-color: #ffffff;
 }
 .test .quiz_title {
-  color: #343434;
+  color: #141414;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
@@ -103,7 +109,7 @@ body {
   background-color: #ffffff;
   border: 3px solid #73B7BB;
   border-radius: 30px;
-  color: #343434;
+  color: #141414;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
@@ -153,7 +159,7 @@ body {
 .score_page .commend {
   position: relative;
   bottom: 0;
-  color: #343434;
+  color: #141414;
   font-size: 14px;
   line-height: 35px;
   text-align: center;
@@ -248,7 +254,7 @@ b {
   background-color: #ffffff;
   border: 3px solid #73B7BB;
   border-radius: 50px;
-  color: #343434;
+  color: #141414;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
@@ -260,7 +266,7 @@ h1 {
   font-size: 30px;
   line-height: 56px;
   text-align: center;
-  color: #343434;
+  color: #141414;
 }
 
 .block {
@@ -291,19 +297,19 @@ button:hover {
 .normal:hover {
   background-color: #ffffff !important;
   border: 3px solid #73B7BB !important;
-  color: #343434 !important;
+  color: #141414 !important;
 }
 
 .jec:hover {
   background-color: #ffffff !important;
   border: 3px solid #73B7BB !important;
-  color: #343434 !important;
+  color: #141414 !important;
 }
 
 .get_doc:hover {
   background-color: #ffffff !important;
   border: 3px solid #73B7BB !important;
-  color: #343434 !important;
+  color: #141414 !important;
 }
 
 /*--------------------
@@ -316,7 +322,7 @@ Tab Version
     font-size: 24px;
   }
   .test_content .quiz_title {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 48px;
     padding-top: 24px;
   }
@@ -325,7 +331,7 @@ Tab Version
   }
   .quiz_content {
     position: relative;
-    top: 32px;
+    top: 24px;
     font-size: 16px;
     line-height: 24px;
     padding: 24px;
@@ -333,7 +339,7 @@ Tab Version
     text-align: center;
     background-color: #73B7BB;
     border-radius: 16px;
-    margin: 24px 0;
+    margin: 0 50px;
   }
   .score_page .rank {
     position: relative;
@@ -352,8 +358,9 @@ Tab Version
 }
 @media screen and (min-width: 768px) {
   .quiz_content {
-    margin: 32px 40px;
-    font-size: 16px;
+    margin: 0px 100px;
+    font-size: 18px;
+    line-height: 30px;
   }
   .test_body .frame .first_page {
     background-size: 400px;
@@ -361,7 +368,7 @@ Tab Version
   }
   .test_body .frame .first_page button {
     width: 250px;
-    height: 80px;
+    height: 60px;
     border-radius: 50px;
     font-size: 16px;
   }
@@ -401,11 +408,12 @@ Tab Version
     width: 350px;
     height: 80px;
     border-radius: 50px;
-    font-size: 16px;
+    font-size: 18px;
   }
   .quiz_content {
-    margin: 32px 80px;
-    font-size: 18px;
+    margin: 0px 200px;
+    line-height: 40px;
+    font-size: 20px;
   }
   .score_page .commend {
     line-height: 50px;
@@ -432,5 +440,8 @@ Tab Version
     height: 80px;
     border-radius: 50px;
     font-size: 16px;
+  }
+  .test .quiz_title {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=test.css.map */

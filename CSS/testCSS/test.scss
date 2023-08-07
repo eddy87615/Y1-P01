@@ -14,7 +14,7 @@
 
 $base_color: #1361A5;
 $main_color: #73B7BB;
-$text_color: #343434;
+$text_color: #141414;
 $bg_color: #ffffff;
 
 body{
@@ -66,8 +66,8 @@ body{
 
             background-image: url(../../img/coding01.svg);
             background-repeat: no-repeat;
-            background-size: 300px 300px;
-            background-position: 50% 480px;
+            background-size: 250px 250px;
+            background-position: 50% 550px;
 
             .content_start{
                 text-align: center;
@@ -75,7 +75,15 @@ body{
                 .start_word{
                     margin: 16px 0 56px 0;
 
+                    font-size: 20px;
+                    line-height: 40px;
+
                     color: $text_color;
+
+                    .all_question{
+                        font-size: 16px;
+                        color: #343434;
+                    }
                 }
             }
 
@@ -439,7 +447,7 @@ Tab Version
     .test_content{
 
         .quiz_title{
-            font-size: 32px;
+            font-size: 24px;
             line-height: 48px;
 
             padding-top: 24px;
@@ -455,7 +463,7 @@ Tab Version
     .quiz_content{
         position: relative;
 
-        top: 32px;
+        top: 24px;
     
         font-size: 16px;
         line-height: 24px;
@@ -470,7 +478,7 @@ Tab Version
         background-color: $main_color;
         border-radius: 16px ;
     
-        margin: 24px 0;
+        margin: 0 50px;
     }
 
     .score_page{
@@ -503,9 +511,10 @@ Tab Version
 @media screen and (min-width: 768px){
 
     .quiz_content{
-        margin: 32px 40px;
+        margin: 0px 100px;
 
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 30px;
     }
 
     .test_body{
@@ -516,7 +525,7 @@ Tab Version
 
                     button{
                         width: 250px;
-                        height: 80px;
+                        height: 60px;
                         border-radius: 50px;
                         font-size: 16px;
                     }
@@ -580,16 +589,16 @@ Tab Version
                     width: 350px;
                     height: 80px;
                     border-radius: 50px;
-                    font-size: 16px;
+                    font-size: 18px;
                 }
             }
         }
     }
 
     .quiz_content{
-        margin: 32px 80px;
-
-        font-size: 18px;
+        margin: 0px 200px;
+        line-height: 40px;
+        font-size: 20px;
     }
 
     .score_page{
@@ -628,6 +637,10 @@ Tab Version
                 border-radius: 50px;
                 font-size: 16px;
             }
+        }
+
+        .quiz_title{
+            font-size: 30px;
         }
     }
     

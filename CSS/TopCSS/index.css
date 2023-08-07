@@ -140,7 +140,7 @@ header .ham_menu .ham_btn .btn_line {
   padding: 30px;
   max-height: 80px;
   border-bottom: 3px solid #73B7BB;
-  color: #343434;
+  color: #141414;
   font-weight: bold;
   font-size: 16px;
 }
@@ -170,7 +170,7 @@ header .ham_menu .ham_btn .btn_line {
 .menu_body .menu_btn .menu_btn02 {
   transition-duration: 0.3s;
   background-color: #fff;
-  color: #343434;
+  color: #141414;
   border: 3px solid #73B7BB;
 }
 
@@ -314,7 +314,7 @@ p {
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
-  color: #343434;
+  color: #141414;
   background-color: #fff;
   border: 3px solid #73B7BB;
   transition-duration: 0.3s;
@@ -402,7 +402,7 @@ footer .footer_link .footer_link_a {
 }
 footer .footer_link a {
   text-decoration: none;
-  color: #343434;
+  color: #141414;
 }
 footer .footer_link p {
   font-size: 14px;
@@ -442,7 +442,7 @@ section a:hover {
 .test_link:hover {
   background-color: #fff;
   border: 3px solid #73B7BB;
-  color: #343434;
+  color: #141414;
   transition-duration: 0.3s;
 }
 
