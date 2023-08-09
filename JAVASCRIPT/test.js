@@ -210,6 +210,10 @@ const hotpage = document.querySelector(".hotpage");
 
 const rankingPic = document.createElement("img");
 
+const counterElement = document.querySelector(".counter");
+
+console.log(counterElement);
+
 console.log(jec_btn);
 console.log(get_doc);
 console.log(hotpage);
@@ -217,6 +221,38 @@ console.log(hotpage);
 
 let counter = 1;
 let score = -3;
+
+//--------counter--------//
+
+let count = 0;
+const totalcount = 20;
+
+function updatecount(){
+    counterElement.textContent =  `${count}/${totalcount}`;
+}
+
+updatecount();
+
+function pluscount(){
+    if(count < totalcount){
+        count++;
+        updatecount();
+    }
+}
+
+btns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        if(counter > quizArr.length){
+            //...
+        }else{
+            pluscount();
+        }
+    })
+})
+
+// counterElement.addEventListener('click', pluscount);
+
+//-----------------------//
 
 //--------------------//
 

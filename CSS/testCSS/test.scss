@@ -139,7 +139,7 @@ body{
 
         position: relative;
 
-        padding-top: 20px;
+        // padding-top: 20px;
 
     }
 
@@ -189,6 +189,13 @@ body{
             font-size: 14px;
             font-weight: bold;
         }
+    }
+
+    .counter{
+        text-align: center;
+        color: $base_color;
+        font-size: 18px;
+        font-weight: bold;
     }
 }
 
@@ -377,23 +384,6 @@ h1{
     margin: 24px auto;
 }
 
-// .quiz_title::after{
-//     content: '';
-//     position: absolute;
-//     top: 100%;
-//     left: 50%;
-//     transform: translateX(-50%);
-
-//     width: 80px;
-//     height: 4px;
-
-//     border-radius: 20px;
-
-//     background-color: $base_color;
-
-//     margin-top: 20px;
-// }
-
 .bgc_pic{
     z-index: 0;
     position: absolute;
@@ -450,7 +440,7 @@ Tab Version
             font-size: 24px;
             line-height: 48px;
 
-            padding-top: 24px;
+            // padding-top: 24px;
         }
 
         .bgc_pic{

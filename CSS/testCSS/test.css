@@ -95,7 +95,6 @@ body {
   line-height: 32px;
   text-align: center;
   position: relative;
-  padding-top: 20px;
 }
 .test button {
   position: relative;
@@ -132,6 +131,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
+  font-weight: bold;
+}
+.test .counter {
+  text-align: center;
+  color: #1361A5;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -324,7 +329,6 @@ Tab Version
   .test_content .quiz_title {
     font-size: 24px;
     line-height: 48px;
-    padding-top: 24px;
   }
   .test_content .bgc_pic {
     width: 300px;
