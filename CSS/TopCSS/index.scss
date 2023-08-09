@@ -336,22 +336,24 @@ section{
 .Web_learning{
     position: relative;
     z-index: 0;
+
+    padding: 16px;
 }
 
 .one{
     position: absolute;
-    top: 140px;
+    top: 150px;
     left: -30px;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
 
     width: 200px;
 }
 .two{
     position: absolute;
-    top: 280px;
+    top: 330px;
     right: 0;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
 
     width: 200px;

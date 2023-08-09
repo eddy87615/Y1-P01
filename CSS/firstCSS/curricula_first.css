@@ -244,7 +244,7 @@ section ul {
 }
 
 .content > ul li > p, .content > ul li > img {
-  padding: 16px;
+  padding: 16px 10px;
 }
 
 .content > ul li > img {

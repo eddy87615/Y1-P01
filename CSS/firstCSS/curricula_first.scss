@@ -319,11 +319,6 @@ section ul{
 #last01, #last02{
     border-top: 3px solid $main_color;
 }
-// .content  > ul > li > ul{
-//     height: 0;
-
-//     overflow: hidden;
-// } 
 
 .coding ul,
 .design ul,
@@ -338,7 +333,7 @@ section ul{
 }
 
 .content > ul li > p, .content > ul li > img{
-    padding: 16px;
+    padding: 16px 10px;
 }
 .content > ul li > img{
     margin: 0 auto;
@@ -358,20 +353,6 @@ h3::before{
     transform: translateY(-50%);
     left: 16px;
 }
-// h3::after{
-//     content: '';
-//     position: absolute;
-
-//     width: 20px;
-//     height: 16px;
-
-//     background-image: url(../../img/opencontent.svg);
-//     background-repeat: no-repeat;
-
-//     top: 50%;
-//     transform: translateY(-50%);
-//     right: 16px;
-// }
 
 .coding,
 .desgn,
