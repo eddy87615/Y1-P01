@@ -205,7 +205,7 @@ b {
   position: relative;
   font-size: 14px;
   line-height: 24px;
-  padding: 10px;
+  padding: 8px;
   color: #ffffff;
   text-align: center;
   background-color: #73B7BB;
@@ -338,7 +338,7 @@ Tab Version
     top: 24px;
     font-size: 16px;
     line-height: 24px;
-    padding: 24px;
+    padding: 8px;
     color: #ffffff;
     text-align: center;
     background-color: #73B7BB;
@@ -362,8 +362,7 @@ Tab Version
 }
 @media screen and (min-width: 768px) {
   .quiz_content {
-    margin: 0px 100px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
   .test_body .frame .first_page {
@@ -398,7 +397,7 @@ Tab Version
   }
   .test .button button {
     width: 250px;
-    height: 80px;
+    height: 60px;
     border-radius: 50px;
     font-size: 16px;
   }
@@ -415,9 +414,8 @@ Tab Version
     font-size: 18px;
   }
   .quiz_content {
-    margin: 0px 200px;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 16px;
   }
   .score_page .commend {
     line-height: 50px;
@@ -441,7 +439,7 @@ Tab Version
   }
   .test .button button {
     width: 300px;
-    height: 80px;
+    height: 60px;
     border-radius: 50px;
     font-size: 16px;
   }

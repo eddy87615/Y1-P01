@@ -281,7 +281,7 @@ b{
     font-size: 14px;
     line-height: 24px;
 
-    padding: 10px;
+    padding: 8px;
 
     color: $bg_color;
 
@@ -458,7 +458,7 @@ Tab Version
         font-size: 16px;
         line-height: 24px;
     
-        padding: 24px;
+        padding: 8px;
     
         color: $bg_color;
     
@@ -501,9 +501,8 @@ Tab Version
 @media screen and (min-width: 768px){
 
     .quiz_content{
-        margin: 0px 100px;
 
-        font-size: 18px;
+        font-size: 16px;
         line-height: 30px;
     }
 
@@ -558,7 +557,7 @@ Tab Version
             .button{
                 button{
                     width: 250px;
-                    height: 80px;
+                    height: 60px;
                     border-radius: 50px;
                     font-size: 16px;
                 }
@@ -586,9 +585,8 @@ Tab Version
     }
 
     .quiz_content{
-        margin: 0px 200px;
         line-height: 40px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .score_page{
@@ -623,7 +621,7 @@ Tab Version
         .button{
             button{
                 width: 300px;
-                height: 80px;
+                height: 60px;
                 border-radius: 50px;
                 font-size: 16px;
             }
