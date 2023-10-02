@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url(../../font/NotoSansJP-VariableFont_wght.eot), url(../../font/NotoSansJP-VariableFont_wght.ttf), url(../../font/NotoSansJP-VariableFont_wght.woff);
+}
 * {
   box-sizing: border-box;
   font-family: "Noto Sans JP", sans-serif;
@@ -13,8 +16,8 @@ body {
 
 /*-----HEADER-----*/
 .header_change_color {
-  background-color: #1361A5;
-  border-bottom: 5px solid #73B7BB;
+  background-color: #1361a5;
+  border-bottom: 5px solid #73b7bb;
   transition-duration: 0.5s;
 }
 
@@ -28,7 +31,7 @@ header {
   display: flex;
   width: 100%;
   height: 80px;
-  border-bottom: 5px solid #73B7BB;
+  border-bottom: 5px solid #73b7bb;
   background-color: #ffffff;
 }
 header .logo {
@@ -61,7 +64,7 @@ header .ham_menu .ham_btn .btn_line {
   display: block;
   width: 35px;
   height: 3px;
-  background-color: #1361A5;
+  background-color: #1361a5;
   border-radius: 2px;
   transition-duration: 0.3s;
 }
@@ -74,7 +77,7 @@ header .ham_menu .ham_btn .btn_line {
   width: 35px;
   height: 3px;
   border-radius: 4px;
-  background-color: #1361A5;
+  background-color: #1361a5;
   transition-duration: 0.3s;
 }
 
@@ -86,7 +89,7 @@ header .ham_menu .ham_btn .btn_line {
   width: 35px;
   height: 3px;
   border-radius: 4px;
-  background-color: #1361A5;
+  background-color: #1361a5;
   transition-duration: 0.3s;
 }
 
@@ -141,7 +144,7 @@ header .ham_menu .ham_btn .btn_line {
   justify-content: center;
   padding: 30px;
   max-height: 80px;
-  border-bottom: 3px solid #73B7BB;
+  border-bottom: 3px solid #73b7bb;
   color: #343434;
   font-weight: bold;
   font-size: 16px;
@@ -165,7 +168,7 @@ header .ham_menu .ham_btn .btn_line {
 }
 .menu_body .menu_btn .menu_btn01 {
   transition-duration: 0.3s;
-  background-color: #73B7BB;
+  background-color: #73b7bb;
   border: 3px solid #fff;
   color: #fff;
 }
@@ -173,7 +176,7 @@ header .ham_menu .ham_btn .btn_line {
   transition-duration: 0.3s;
   background-color: #fff;
   color: #343434;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
 }
 
 /*-----section-----*/
@@ -199,7 +202,7 @@ section ul {
   top: 50%;
   transform: translateY(-50%);
   left: 24px;
-  background-color: #1361A5;
+  background-color: #1361a5;
   width: 12px;
   height: 50px;
 }
@@ -210,7 +213,7 @@ section ul {
 .content h2 {
   text-align: center;
   padding: 16px;
-  background-color: #1361A5;
+  background-color: #1361a5;
   color: #ffffff;
   font-size: 24px;
 }
@@ -218,7 +221,7 @@ section ul {
   position: relative;
   font-size: 16px;
   padding: 32px 0 32px 40px;
-  border-bottom: 3px solid #73B7BB;
+  border-bottom: 3px solid #73b7bb;
   color: #343434;
   cursor: pointer;
 }
@@ -231,19 +234,21 @@ section ul {
   line-height: 24px;
 }
 
-#last01, #last02 {
-  border-top: 3px solid #73B7BB;
+#last01,
+#last02 {
+  border-top: 3px solid #73b7bb;
 }
 
 .coding ul,
 .design ul,
 .basic ul {
   display: none;
-  border-bottom: 3px solid #73B7BB;
+  border-bottom: 3px solid #73b7bb;
   margin: 0 auto;
 }
 
-.content > ul li > p, .content > ul li > img {
+.content > ul li > p,
+.content > ul li > img {
   padding: 16px 10px;
 }
 
@@ -286,7 +291,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  border-top: 3px solid #1361A5;
+  border-top: 3px solid #1361a5;
   background-color: #ffffff;
 }
 footer .footer_link {
@@ -328,7 +333,7 @@ footer .copyright {
   color: #ffffff;
   text-align: center;
   margin: 0;
-  background-color: #1361A5;
+  background-color: #1361a5;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -340,7 +345,7 @@ footer .copyright {
   transform: rotate(45deg);
   position: absolute;
   top: 50%;
-  background-color: #1361A5;
+  background-color: #1361a5;
   transition-duration: 0.3s;
 }
 
@@ -348,7 +353,7 @@ footer .copyright {
   transform: rotate(-45deg);
   position: absolute;
   top: 50%;
-  background-color: #1361A5;
+  background-color: #1361a5;
   transition-duration: 0.3s;
 }
 
@@ -366,33 +371,33 @@ footer .copyright {
 
 /*-----hover-----*/
 .menu_link li a:hover {
-  background-color: #73B7BB;
+  background-color: #73b7bb;
   color: #fff;
   transition-duration: 0.3s;
 }
 
 .menu_btn li .menu_btn01:hover {
   background-color: #fff;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
   color: #343434;
   transition-duration: 0.3s;
 }
 
 .menu_btn li .menu_btn02:hover {
-  background-color: #73B7BB;
-  border: 3px solid #73B7BB;
+  background-color: #73b7bb;
+  border: 3px solid #73b7bb;
   color: #fff;
   transition-duration: 0.3s;
 }
 
 h3:hover {
-  background-color: #73B7BB;
+  background-color: #73b7bb;
   transition-duration: 0.3s;
   color: #ffffff;
 }
 
 .footer_link a:hover {
-  color: #1361A5;
+  color: #1361a5;
 }
 
 /*--------------------

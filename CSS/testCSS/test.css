@@ -1,5 +1,8 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url(../../font/NotoSansJP-VariableFont_wght.eot), url(../../font/NotoSansJP-VariableFont_wght.ttf), url(../../font/NotoSansJP-VariableFont_wght.woff);
+}
 * {
   font-family: "Noto Sans JP", sans-serif;
   font-style: normal;
@@ -17,7 +20,7 @@ body {
   height: 100vh;
   padding: 16px;
   margin: 0 auto;
-  background-color: #1361A5;
+  background-color: #1361a5;
   overflow: hidden;
 }
 .test_body .frame {
@@ -36,7 +39,7 @@ body {
 .test_body .frame .first_page {
   width: 100%;
   height: 100%;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
   border-radius: 20px;
   padding: 40px 16px;
   display: flex;
@@ -67,7 +70,7 @@ body {
   width: 200px;
   height: 60px;
   background-color: #ffffff;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
   border-radius: 30px;
   color: #141414;
   font-size: 14px;
@@ -81,7 +84,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
   border-radius: 20px;
   padding: 40px 16px;
   position: relative;
@@ -106,7 +109,7 @@ body {
   width: 200px;
   height: 60px;
   background-color: #ffffff;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
   border-radius: 30px;
   color: #141414;
   font-size: 14px;
@@ -116,8 +119,8 @@ body {
   transition-duration: 0.3s;
 }
 .test .normal {
-  background-color: #73B7BB;
-  border: 3px solid #73B7BB;
+  background-color: #73b7bb;
+  border: 3px solid #73b7bb;
   color: #ffffff;
 }
 .test .test_content {
@@ -135,7 +138,7 @@ body {
 }
 .test .counter {
   text-align: center;
-  color: #1361A5;
+  color: #1361a5;
   font-size: 18px;
   font-weight: bold;
 }
@@ -144,15 +147,16 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
   border-radius: 20px;
   padding: 40px 16px;
   position: relative;
   right: -100vw;
 }
-.score_page .jec, .score_page .get_doc {
-  background-color: #73B7BB;
-  border: 3px solid #73B7BB;
+.score_page .jec,
+.score_page .get_doc {
+  background-color: #73b7bb;
+  border: 3px solid #73b7bb;
   color: #ffffff;
 }
 .score_page .rank {
@@ -191,7 +195,7 @@ b {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
   border-radius: 20px;
   padding: 40px 8px;
   position: relative;
@@ -208,7 +212,7 @@ b {
   padding: 8px;
   color: #ffffff;
   text-align: center;
-  background-color: #73B7BB;
+  background-color: #73b7bb;
   border-radius: 16px;
   margin: 32px 0 0 0;
 }
@@ -231,7 +235,7 @@ b {
 .test_show {
   width: 100%;
   height: 100%;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
   border-radius: 20px;
   padding: 40px 8px;
   position: relative;
@@ -257,7 +261,7 @@ b {
   width: 290px;
   height: 60px;
   background-color: #ffffff;
-  border: 3px solid #73B7BB;
+  border: 3px solid #73b7bb;
   border-radius: 50px;
   color: #141414;
   font-size: 14px;
@@ -277,7 +281,7 @@ h1 {
 .block {
   width: 90%;
   height: 10px;
-  background-color: #1361A5;
+  background-color: #1361a5;
   border-radius: 20px;
   margin: 24px auto;
 }
@@ -294,26 +298,26 @@ h1 {
 
 /*-----hover-----*/
 button:hover {
-  background-color: #73B7BB !important;
+  background-color: #73b7bb !important;
   color: #ffffff !important;
   transition-duration: 0.3s;
 }
 
 .normal:hover {
   background-color: #ffffff !important;
-  border: 3px solid #73B7BB !important;
+  border: 3px solid #73b7bb !important;
   color: #141414 !important;
 }
 
 .jec:hover {
   background-color: #ffffff !important;
-  border: 3px solid #73B7BB !important;
+  border: 3px solid #73b7bb !important;
   color: #141414 !important;
 }
 
 .get_doc:hover {
   background-color: #ffffff !important;
-  border: 3px solid #73B7BB !important;
+  border: 3px solid #73b7bb !important;
   color: #141414 !important;
 }
 
@@ -341,7 +345,7 @@ Tab Version
     padding: 8px;
     color: #ffffff;
     text-align: center;
-    background-color: #73B7BB;
+    background-color: #73b7bb;
     border-radius: 16px;
     margin: 0 50px;
   }

@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url(../../font/NotoSansJP-VariableFont_wght.eot),
+    url(../../font/NotoSansJP-VariableFont_wght.ttf),
+    url(../../font/NotoSansJP-VariableFont_wght.woff);
+}
 
 * {
   // border: solid 1px rgb(255, 1, 1);
