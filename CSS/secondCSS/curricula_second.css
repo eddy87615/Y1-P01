@@ -17,7 +17,7 @@ body {
 /*-----HEADER-----*/
 .header_change_color {
   background-color: #1361a5;
-  border-bottom: 5px solid #73b7bb;
+  border-bottom: 5px solid #34ccd4;
   transition-duration: 0.5s;
 }
 
@@ -31,7 +31,7 @@ header {
   display: flex;
   width: 100%;
   height: 80px;
-  border-bottom: 5px solid #73b7bb;
+  border-bottom: 5px solid #34ccd4;
   background-color: #ffffff;
 }
 header .logo {
@@ -144,8 +144,8 @@ header .ham_menu .ham_btn .btn_line {
   justify-content: center;
   padding: 30px;
   max-height: 80px;
-  border-bottom: 3px solid #73b7bb;
-  color: #343434;
+  border-bottom: 3px solid #34ccd4;
+  color: #141414;
   font-weight: bold;
   font-size: 16px;
 }
@@ -168,15 +168,15 @@ header .ham_menu .ham_btn .btn_line {
 }
 .menu_body .menu_btn .menu_btn01 {
   transition-duration: 0.3s;
-  background-color: #73b7bb;
+  background-color: #34ccd4;
   border: 3px solid #fff;
   color: #fff;
 }
 .menu_body .menu_btn .menu_btn02 {
   transition-duration: 0.3s;
   background-color: #fff;
-  color: #343434;
-  border: 3px solid #73b7bb;
+  color: #141414;
+  border: 3px solid #34ccd4;
 }
 
 /*-----section-----*/
@@ -193,7 +193,7 @@ section ul {
   background-repeat: no-repeat;
   background-size: 150% 250%;
   background-position: 20% 20%;
-  color: #343434;
+  color: #141414;
 }
 
 .title::before {
@@ -219,33 +219,33 @@ section ul {
 }
 .content h3 {
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
-  padding: 32px 0 32px 40px;
-  border-bottom: 3px solid #73b7bb;
-  color: #343434;
+  padding: 32px 0 32px 16px;
+  border-bottom: 3px solid #34ccd4;
+  color: #141414;
   cursor: pointer;
 }
 .content .last {
   border-bottom: 0;
 }
 .content p {
-  color: #343434;
-  font-size: 14px;
+  color: #141414;
+  font-size: 15px;
   font-weight: 400;
   line-height: 24px;
 }
 
 #last01,
 #last02 {
-  border-top: 3px solid #73b7bb;
+  border-top: 3px solid #34ccd4;
 }
 
 .coding ul,
 .design ul,
 .basic ul {
   display: none;
-  border-bottom: 3px solid #73b7bb;
+  border-bottom: 3px solid #34ccd4;
   margin: 0 auto;
 }
 
@@ -256,18 +256,6 @@ section ul {
 
 .content > ul li > img {
   margin: 0 auto;
-}
-
-h3::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #343434;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 16px;
 }
 
 span {
@@ -311,7 +299,7 @@ footer .footer_link .footer_link_a {
 }
 footer .footer_link a {
   text-decoration: none;
-  color: #343434;
+  color: #141414;
   padding: 4px;
 }
 footer .footer_link p {
@@ -373,27 +361,27 @@ footer .copyright {
 
 /*-----hover-----*/
 .menu_link li a:hover {
-  background-color: #73b7bb;
+  background-color: #34ccd4;
   color: #fff;
   transition-duration: 0.3s;
 }
 
 .menu_btn li .menu_btn01:hover {
   background-color: #fff;
-  border: 3px solid #73b7bb;
+  border: 3px solid #34ccd4;
   color: #343434;
   transition-duration: 0.3s;
 }
 
 .menu_btn li .menu_btn02:hover {
-  background-color: #73b7bb;
-  border: 3px solid #73b7bb;
+  background-color: #34ccd4;
+  border: 3px solid #34ccd4;
   color: #fff;
   transition-duration: 0.3s;
 }
 
 h3:hover {
-  background-color: #73b7bb;
+  background-color: #34ccd4;
   transition-duration: 0.3s;
   color: #ffffff;
 }

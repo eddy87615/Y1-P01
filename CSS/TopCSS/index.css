@@ -17,7 +17,7 @@ body {
 /*-----HEADER-----*/
 .header_change_color {
   background-color: #1361a5;
-  border-bottom: 5px solid #73b7bb;
+  border-bottom: 5px solid #2ebfc7;
   transition-duration: 0.5s;
 }
 
@@ -142,7 +142,7 @@ header .ham_menu .ham_btn .btn_line {
   justify-content: center;
   padding: 30px;
   max-height: 80px;
-  border-bottom: 3px solid #73b7bb;
+  border-bottom: 3px solid #2ebfc7;
   color: #141414;
   font-weight: bold;
   font-size: 16px;
@@ -166,7 +166,7 @@ header .ham_menu .ham_btn .btn_line {
 }
 .menu_body .menu_btn .menu_btn01 {
   transition-duration: 0.3s;
-  background-color: #73b7bb;
+  background-color: #2ebfc7;
   border: 3px solid #fff;
   color: #fff;
 }
@@ -174,7 +174,7 @@ header .ham_menu .ham_btn .btn_line {
   transition-duration: 0.3s;
   background-color: #fff;
   color: #141414;
-  border: 3px solid #73b7bb;
+  border: 3px solid #2ebfc7;
 }
 
 /*-----Key Visual-----*/
@@ -320,7 +320,7 @@ p {
   font-weight: bold;
   color: #141414;
   background-color: #fff;
-  border: 3px solid #73b7bb;
+  border: 3px solid #fcd344;
   transition-duration: 0.3s;
 }
 
@@ -366,9 +366,9 @@ p {
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
-  color: #fff;
-  background-color: #73b7bb;
-  border: 3px solid #73b7bb;
+  color: #141414;
+  background-color: #fcd344;
+  border: 3px solid #fcd344;
 }
 
 .test_intro_content::before {
@@ -437,35 +437,35 @@ footer .copyright {
 
 /*-----hover-----*/
 section a:hover {
-  background-color: #73b7bb;
-  border: 3px solid #73b7bb;
-  color: #fff;
+  background-color: #fcd344;
+  border: 3px solid #fcd344;
+  color: #141414;
   transition-duration: 0.3s;
 }
 
 .test_link:hover {
   background-color: #fff;
-  border: 3px solid #73b7bb;
+  border: 3px solid #fcd344;
   color: #141414;
   transition-duration: 0.3s;
 }
 
 .menu_link li a:hover {
-  background-color: #73b7bb;
+  background-color: #2ebfc7;
   color: #fff;
   transition-duration: 0.3s;
 }
 
 .menu_btn li .menu_btn01:hover {
   background-color: #fff;
-  border: 3px solid #73b7bb;
+  border: 3px solid #2ebfc7;
   color: #343434;
   transition-duration: 0.3s;
 }
 
 .menu_btn li .menu_btn02:hover {
-  background-color: #73b7bb;
-  border: 3px solid #73b7bb;
+  background-color: #2ebfc7;
+  border: 3px solid #2ebfc7;
   color: #fff;
   transition-duration: 0.3s;
 }

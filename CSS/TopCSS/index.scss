@@ -18,8 +18,9 @@
 }
 
 $base_color: #1361a5;
-$main_color: #73b7bb;
-// 34ccd4
+// $main_color: #73b7bb;
+$main_color: #2ebfc7;
+$accent_color: #fcd344;
 $text_color: #141414;
 $bg_color: #ffffff;
 
@@ -405,7 +406,7 @@ p {
   color: $text_color;
 
   background-color: #fff;
-  border: 3px solid $main_color;
+  border: 3px solid $accent_color;
 
   transition-duration: 0.3s;
 }
@@ -459,10 +460,10 @@ p {
 
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: $text_color;
 
-    background-color: $main_color;
-    border: 3px solid $main_color;
+    background-color: $accent_color;
+    border: 3px solid $accent_color;
   }
 }
 .test_intro_content::before {
@@ -546,15 +547,15 @@ footer {
 /*-----hover-----*/
 
 section a:hover {
-  background-color: $main_color;
-  border: 3px solid $main_color;
-  color: #fff;
+  background-color: $accent_color;
+  border: 3px solid $accent_color;
+  color: $text_color;
 
   transition-duration: 0.3s;
 }
 .test_link:hover {
   background-color: #fff;
-  border: 3px solid $main_color;
+  border: 3px solid $accent_color;
   color: $text_color;
 
   transition-duration: 0.3s;

@@ -18,8 +18,10 @@
 }
 
 $base_color: #1361a5;
-$main_color: #73b7bb;
-$text_color: #343434;
+// $main_color: #73b7bb;
+$main_color: #34ccd4;
+$accent_color: #fcd344;
+$text_color: #141414;
 $bg_color: #ffffff;
 
 body {
@@ -288,10 +290,10 @@ section ul {
   h3 {
     position: relative;
 
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
 
-    padding: 32px 0 32px 40px;
+    padding: 32px 0 32px 16px;
 
     border-bottom: 3px solid $main_color;
 
@@ -310,7 +312,7 @@ section ul {
   p {
     color: $text_color;
 
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
 
     line-height: 24px;
@@ -339,20 +341,20 @@ section ul {
   margin: 0 auto;
 }
 
-h3::before {
-  content: '';
-  position: absolute;
+// h3::before {
+//   content: '';
+//   position: absolute;
 
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+//   width: 8px;
+//   height: 8px;
+//   border-radius: 50%;
 
-  background-color: $text_color;
+//   background-color: $text_color;
 
-  top: 50%;
-  transform: translateY(-50%);
-  left: 16px;
-}
+//   top: 50%;
+//   transform: translateY(-50%);
+//   left: 16px;
+// }
 
 span {
   position: absolute;

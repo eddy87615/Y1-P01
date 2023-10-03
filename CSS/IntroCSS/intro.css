@@ -17,7 +17,7 @@ body {
 /*-----HEADER-----*/
 .header_change_color {
   background-color: #1361a5;
-  border-bottom: 5px solid #73b7bb;
+  border-bottom: 5px solid #34ccd4;
   transition-duration: 0.5s;
 }
 
@@ -31,7 +31,7 @@ header {
   display: flex;
   width: 100%;
   height: 80px;
-  border-bottom: 5px solid #73b7bb;
+  border-bottom: 5px solid #34ccd4;
   background-color: #ffffff;
 }
 header .logo {
@@ -144,7 +144,7 @@ header .ham_menu .ham_btn .btn_line {
   justify-content: center;
   padding: 30px;
   max-height: 80px;
-  border-bottom: 3px solid #73b7bb;
+  border-bottom: 3px solid #34ccd4;
   color: #141414;
   font-weight: bold;
   font-size: 16px;
@@ -168,7 +168,7 @@ header .ham_menu .ham_btn .btn_line {
 }
 .menu_body .menu_btn .menu_btn01 {
   transition-duration: 0.3s;
-  background-color: #73b7bb;
+  background-color: #34ccd4;
   border: 3px solid #fff;
   color: #fff;
 }
@@ -176,7 +176,7 @@ header .ham_menu .ham_btn .btn_line {
   transition-duration: 0.3s;
   background-color: #fff;
   color: #141414;
-  border: 3px solid #73b7bb;
+  border: 3px solid #34ccd4;
 }
 
 /*-----content-----*/
@@ -288,7 +288,7 @@ main .webdesign_intro .img03::before {
   font-weight: bold;
   color: #141414;
   background-color: #ffffff;
-  border: 3px solid #73b7bb;
+  border: 3px solid #fcd344;
   border-radius: 30px;
   z-index: 1;
   transition-duration: 0.3s;
@@ -334,7 +334,7 @@ main .webdesign_intro .img03::before {
   font-weight: bold;
   color: #141414;
   background-color: #ffffff;
-  border: 3px solid #73b7bb;
+  border: 3px solid #fcd344;
   border-radius: 30px;
   transition-duration: 0.3s;
 }
@@ -403,8 +403,8 @@ footer .copyright {
 /*-----hover-----*/
 main a:hover,
 main ul > li > a:hover {
-  background-color: #73b7bb;
-  color: #ffffff;
+  background-color: #fcd344;
+  color: #141414;
   transition-duration: 0.3s;
 }
 
@@ -413,21 +413,21 @@ main ul > li > a:hover {
 }
 
 .menu_link li a:hover {
-  background-color: #73b7bb;
+  background-color: #34ccd4;
   color: #fff;
   transition-duration: 0.3s;
 }
 
 .menu_btn li .menu_btn01:hover {
   background-color: #fff;
-  border: 3px solid #73b7bb;
+  border: 3px solid #34ccd4;
   color: #343434;
   transition-duration: 0.3s;
 }
 
 .menu_btn li .menu_btn02:hover {
-  background-color: #73b7bb;
-  border: 3px solid #73b7bb;
+  background-color: #34ccd4;
+  border: 3px solid #34ccd4;
   color: #fff;
   transition-duration: 0.3s;
 }

@@ -18,7 +18,9 @@
 }
 
 $base_color: #1361a5;
-$main_color: #73b7bb;
+// $main_color: #73b7bb;
+$main_color: #34ccd4;
+$accent_color: #fcd344;
 $text_color: #141414;
 $bg_color: #ffffff;
 
@@ -375,7 +377,7 @@ main {
         color: $text_color;
         background-color: $bg_color;
 
-        border: 3px solid $main_color;
+        border: 3px solid $accent_color;
         border-radius: 30px;
 
         z-index: 1;
@@ -438,7 +440,7 @@ main {
     color: $text_color;
     background-color: $bg_color;
 
-    border: 3px solid $main_color;
+    border: 3px solid $accent_color;
     border-radius: 30px;
 
     transition-duration: 0.3s;
@@ -528,8 +530,8 @@ footer {
 
 main a:hover,
 main ul > li > a:hover {
-  background-color: $main_color;
-  color: $bg_color;
+  background-color: $accent_color;
+  color: $text_color;
 
   transition-duration: 0.3s;
 }
