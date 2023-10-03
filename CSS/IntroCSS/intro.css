@@ -12,6 +12,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  letter-spacing: 1px;
 }
 
 /*-----HEADER-----*/
@@ -288,7 +289,7 @@ main .webdesign_intro .img03::before {
   font-weight: bold;
   color: #141414;
   background-color: #ffffff;
-  border: 3px solid #fcd344;
+  border: 3px solid #f6cb30;
   border-radius: 30px;
   z-index: 1;
   transition-duration: 0.3s;
@@ -334,7 +335,7 @@ main .webdesign_intro .img03::before {
   font-weight: bold;
   color: #141414;
   background-color: #ffffff;
-  border: 3px solid #fcd344;
+  border: 3px solid #f6cb30;
   border-radius: 30px;
   transition-duration: 0.3s;
 }
@@ -403,7 +404,7 @@ footer .copyright {
 /*-----hover-----*/
 main a:hover,
 main ul > li > a:hover {
-  background-color: #fcd344;
+  background-color: #f6cb30;
   color: #141414;
   transition-duration: 0.3s;
 }

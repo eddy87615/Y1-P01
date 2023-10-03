@@ -1,61 +1,101 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./JAVASCRIPT/test.js" defer></script>
-    <link rel="stylesheet" href="CSS/reset/reset.css">
-    <link rel="stylesheet" href="CSS/testCSS/test.css">
-    <link rel="icon" type="image/svg" href="img/学科LOGO-04.svg">
+    <link rel="stylesheet" href="CSS/reset/reset.css" />
+    <link rel="stylesheet" href="CSS/testCSS/test.css" />
+    <link rel="icon" type="image/svg" href="img/学科LOGO-04.svg" />
     <title>心構え診断｜心構えができる！｜日本電子専門学校</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="test_body">
-
-        <div class="frame">
-            <div class="container">
-                <div class="first_page">
-                    <h1>Webデザイン科<br>心構え診断</h1>
-                    <div class="block"></div>
-                    <div class="content_start">
-                        <div class="start_word"><p>この自己診断でWebデザイン科と自分の適応度をは測ってみよう！<br><span class="all_question">ー全20問ー</span></p></div>
-                        <button class="start">スタート</button>
-                        <button type="button" class="back" onclick="window.close()">戻る</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="test">
-            <h1>Webデザイン科<br>心構え診断</h1>
+      <div class="frame">
+        <div class="container">
+          <div class="first_page">
+            <h1>Webデザイン科<br />心構え診断</h1>
             <div class="block"></div>
-            <p class="counter">1/20</p>
-            <div class="test_content">
-                <div class="quiz_title"></div>
-                
-                <div class="bgc_pic"></div>
-                <div class="bubble"><div class="quiz_content"></div></div>
-                <div class="button">
-                    <button class="yes">はい</button>
-                    <button class="pass">わからない</button>
-                    <button class="no">いいえ</button>
-                </div>
+            <div class="content_start">
+              <div class="start_word">
+                <p>
+                  この自己診断でWebデザイン科と自分の適応度をは測ってみよう！<br /><span
+                    class="all_question"
+                    >ー全20問ー</span
+                  >
+                </p>
+              </div>
+              <button class="start">スタート</button>
+              <button type="button" class="back" onclick="window.close()">
+                戻る
+              </button>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="score_page">
-            <h1>Webデザイン科<br>心構え診断</h1>
-            <div class="rank"></div>
-            <div class="commend"></div>
-            <div class="rank_btn">
-                <button class="top" type="button" name="Back To Top" onclick="location.href='index.html'">TOP</button>
-                <button class="jec" type="button" name="Jec Official Site" onclick="window.open('https://www.jec.ac.jp/', '日本電子専門学校')">日本電子専門学校</button>
-                <button class="get_doc" type="button" name="資料取得" onclick="window.open('https://www.jec.ac.jp/request/', '資料請求')">資料請求</button>
-                <button class="hotpage" type="button" name="Webデザイン科HOT PAGE" onclick="window.open('https://aw-hotpage.jec.ac.jp/', 'Webデザイン科HOT PAGE')">Webデザイン科HOT PAGE</button>
-            </div>
+      <div class="test">
+        <h1>Webデザイン科<br />心構え診断</h1>
+        <div class="block"></div>
+        <p class="counter">1/20</p>
+        <div class="test_content">
+          <div class="quiz_title"></div>
+
+          <div class="bgc_pic"></div>
+          <div class="bubble"><div class="quiz_content"></div></div>
+          <div class="button">
+            <button class="yes">はい</button>
+            <button class="no">いいえ</button>
+            <button class="pass">わからない</button>
+          </div>
         </div>
+      </div>
+
+      <div class="score_page">
+        <h1>Webデザイン科<br />心構え診断</h1>
+        <div class="rank"></div>
+        <div class="commend"></div>
+        <div class="rank_btn">
+          <button
+            class="top"
+            type="button"
+            name="Back To Top"
+            onclick="location.href='index.html'"
+          >
+            TOP
+          </button>
+          <button
+            class="jec"
+            type="button"
+            name="Jec Official Site"
+            onclick="window.open('https://www.jec.ac.jp/', '日本電子専門学校')"
+          >
+            日本電子専門学校
+          </button>
+          <button
+            class="get_doc"
+            type="button"
+            name="資料取得"
+            onclick="window.open('https://www.jec.ac.jp/request/', '資料請求')"
+          >
+            資料請求
+          </button>
+          <button
+            class="hotpage"
+            type="button"
+            name="Webデザイン科HOT PAGE"
+            onclick="window.open('https://aw-hotpage.jec.ac.jp/', 'Webデザイン科HOT PAGE')"
+          >
+            Webデザイン科HOT PAGE
+          </button>
+        </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
