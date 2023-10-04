@@ -490,6 +490,8 @@ footer {
   border-top: 3px solid $base_color;
   background-color: $bg_color;
 
+  // margin-top: 16px;
+
   .footer_link {
     margin: 0 auto;
     width: 80%;
@@ -507,6 +509,8 @@ footer {
     a {
       text-decoration: none;
       color: $text_color;
+
+      padding-bottom: 8px;
     }
     p {
       font-size: 14px;

@@ -189,7 +189,7 @@ body {
       font-weight: bold;
 
       position: absolute;
-      bottom: 30px;
+      bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
 
@@ -283,23 +283,31 @@ b {
 }
 
 .quiz_content {
+  .name {
+    display: flex;
+    justify-content: center;
+  }
   position: relative;
 
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
 
-  padding: 8px;
+  padding: 12px;
 
-  color: $bg_color;
+  color: #545454;
 
-  text-align: center;
+  width: fit-content;
+
+  //   text-align: center;
 
   // border: 1px solid $main_color;
   background-color: $main_color;
+
   border-radius: 16px;
 
   margin: 32px 0 0 0;
 }
+
 .quiz_content::before {
   content: '';
 

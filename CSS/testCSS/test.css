@@ -131,7 +131,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 14px;
@@ -208,14 +208,18 @@ b {
 
 .quiz_content {
   position: relative;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
-  padding: 8px;
-  color: #ffffff;
-  text-align: center;
+  padding: 12px;
+  color: #545454;
+  width: fit-content;
   background-color: #34ccd4;
   border-radius: 16px;
   margin: 32px 0 0 0;
+}
+.quiz_content .name {
+  display: flex;
+  justify-content: center;
 }
 
 .quiz_content::before {
