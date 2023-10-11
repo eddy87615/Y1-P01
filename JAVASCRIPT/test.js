@@ -15,7 +15,7 @@ const newQuiz = [
     id: 0,
     title: '<br>1.オープンキャンパスに参加しましたか？',
     content: `Webデザイン科ってどういう学科が知りたいなら、ぜひ来てみてください！`,
-    img: `img/jeclogo.svg`,
+    img: `img/logo.svg`,
     bubble: ``,
   },
   {
