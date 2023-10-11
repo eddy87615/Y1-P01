@@ -221,9 +221,14 @@ body {
 
   .jec,
   .get_doc {
+    background-color: $bg_color;
+    border: 3px solid $main_color;
+    // color: $bg_color;
+  }
+  .opencampus {
     background-color: $main_color;
     border: 3px solid $main_color;
-    color: $bg_color;
+    color: $text_color;
   }
 
   .rank {
@@ -263,6 +268,9 @@ b {
 .hotpage_hide {
   display: none !important;
 }
+.opencampus_hide {
+  display: none !important;
+}
 
 .score_show {
   position: absolute;
@@ -294,7 +302,7 @@ b {
 
   padding: 12px;
 
-  color: #545454;
+  color: #343434;
 
   width: fit-content;
 
@@ -412,24 +420,24 @@ h1 {
 
 button:hover {
   background-color: $main_color !important;
-  color: $bg_color !important;
+  // color: $bg_color !important;
 
   transition-duration: 0.3s;
 }
 
 .normal:hover {
-  background-color: $bg_color !important;
+  // background-color: $bg_color !important;
   border: 3px solid $main_color !important;
   color: $text_color !important;
 }
 
 .jec:hover {
-  background-color: $bg_color !important;
+  // background-color: $bg_color !important;
   border: 3px solid $main_color !important;
   color: $text_color !important;
 }
 .get_doc:hover {
-  background-color: $bg_color !important;
+  // background-color: $bg_color !important;
   border: 3px solid $main_color !important;
   color: $text_color !important;
 }

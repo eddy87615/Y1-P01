@@ -156,9 +156,13 @@ body {
 }
 .score_page .jec,
 .score_page .get_doc {
+  background-color: #ffffff;
+  border: 3px solid #34ccd4;
+}
+.score_page .opencampus {
   background-color: #34ccd4;
   border: 3px solid #34ccd4;
-  color: #ffffff;
+  color: #141414;
 }
 .score_page .rank {
   position: relative;
@@ -192,6 +196,10 @@ b {
   display: none !important;
 }
 
+.opencampus_hide {
+  display: none !important;
+}
+
 .score_show {
   position: absolute;
   width: 100%;
@@ -211,7 +219,7 @@ b {
   font-size: 15px;
   line-height: 24px;
   padding: 12px;
-  color: #545454;
+  color: #343434;
   width: fit-content;
   background-color: #34ccd4;
   border-radius: 16px;
@@ -304,24 +312,20 @@ h1 {
 /*-----hover-----*/
 button:hover {
   background-color: #34ccd4 !important;
-  color: #ffffff !important;
   transition-duration: 0.3s;
 }
 
 .normal:hover {
-  background-color: #ffffff !important;
   border: 3px solid #34ccd4 !important;
   color: #141414 !important;
 }
 
 .jec:hover {
-  background-color: #ffffff !important;
   border: 3px solid #34ccd4 !important;
   color: #141414 !important;
 }
 
 .get_doc:hover {
-  background-color: #ffffff !important;
   border: 3px solid #34ccd4 !important;
   color: #141414 !important;
 }
